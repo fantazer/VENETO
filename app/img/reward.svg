@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200mm" height="200mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 20000 20000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:white;stroke-width:200;stroke-miterlimit:22.9256}
+    .str0 {stroke:#FEFEFE;stroke-width:250;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <ellipse class="fil0 str0" cx="7781.9" cy="8157.76" rx="3744.44" ry="3787.48"/>
+  <polyline class="fil0 str0" points="7761.69,11962.24 5410.99,15728.27 4499.86,13409.17 2067.86,13641.54 4418.56,9875.52 "/>
+  <polyline class="fil0 str0" points="7831.92,11905.44 10182.62,15671.46 11093.75,13352.36 13525.75,13584.73 11175.05,9818.71 "/>
+  <polygon class="fil0 str0" points="7703.62,6101.62 8326.98,7407.93 9774.61,7591.15 8712.24,8581.72 8983.56,10001.26 7703.61,9307.15 6423.67,10001.26 6694.99,8581.71 5632.63,7591.15 7080.26,7407.92 "/>
+  <path class="fil0 str1" d="M4495.2 3539.86c1639.65,-1494.52 3778.27,-2322.94 5996.85,-2322.94 4916.49,0 8902.1,3985.61 8902.1,8902.11 0,4916.49 -3985.61,8902.1 -8902.1,8902.1 -1491.05,0 -2958.21,-374.52 -4266.82,-1089.19"/>
+ </g>
+</svg>

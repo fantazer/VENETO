@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200mm" height="200mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 20000 20000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#4E6874;stroke-width:200;stroke-miterlimit:22.9256}
+    .str1 {stroke:#4E6874;stroke-width:250;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#4E6874}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M3934.5 3547.96c1649.39,-1503.4 3800.7,-2336.74 6032.45,-2336.74 4945.68,0 8954.95,4009.27 8954.95,8954.96 0,4945.68 -4009.27,8954.95 -8954.95,8954.95 -1499.9,0 -2975.77,-376.74 -4292.15,-1095.65"/>
+  <polygon class="fil0 str1" points="4018.87,7172.38 6116.39,5795.22 7165.14,5795.22 8213.9,5795.22 10290.23,7182.97 8086.78,9757.19 6360.03,9757.19 "/>
+  <polygon class="fil0 str1" points="5639.68,7182.97 7255.86,9673.72 8796.54,7193.56 7249.89,5869.37 "/>
+  <rect class="fil1" x="4067.34" y="7053.77" width="6169.46" height="280.5"/>
+  <rect class="fil1" x="7131.91" y="3655.34" width="264.44" height="995.79"/>
+  <polygon class="fil0 str1" points="2554.36,9778.38 11791.91,9757.2 12491.08,11452.16 9471.93,11462.76 8762.17,10075 8084.18,11430.97 1929.35,11462.76 "/>
+  <polyline class="fil0 str1" points="2566.83,11459.46 2566.95,16026.53 11804.49,16026.53 11788.45,11454.62 "/>
+  <circle class="fil0 str1" cx="5122.49" cy="12739.44" r="687.11"/>
+  <rect class="fil1" x="3938.81" y="14078.46" width="852.78" height="226.62"/>
+  <rect class="fil1" x="4998.17" y="14082.79" width="1244.74" height="217.95"/>
+  <rect class="fil1" x="5623.18" y="14903.97" width="1419.54" height="251.23"/>
+  <rect class="fil1" x="3382.65" y="14890.22" width="1822.09" height="258.1"/>
+  <rect class="fil1" x="7522.44" y="11433.06" width="325.41" height="4593.47"/>
+  <rect class="fil1" transform="matrix(0.183639 0.105434 -0.312323 0.543984 9145.31 3999.9)" width="1248.83" height="1587.5"/>
+  <rect class="fil1" transform="matrix(0.149648 0.149816 -0.443794 0.443296 10722.2 5053.2)" width="1248.83" height="1587.5"/>
+  <rect class="fil1" transform="matrix(-0.183639 0.105434 0.312323 0.543984 5156.95 3994.02)" width="1248.83" height="1587.5"/>
+  <rect class="fil1" transform="matrix(0.183639 0.105434 -0.312323 0.543984 9145.31 3999.9)" width="1248.83" height="1587.5"/>
+  <rect class="fil1" transform="matrix(-0.149648 0.149816 0.443794 0.443296 3586.66 5076.68)" width="1248.83" height="1587.5"/>
+ </g>
+</svg>

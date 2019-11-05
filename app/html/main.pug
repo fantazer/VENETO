@@ -1,0 +1,161 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.header
+		.main-cont
+			.head
+				a(href="/").logo
+					img(src="img/logo.svg", alt="")
+				a(href="tel:+7 (495) 651-86-75").head__phone +7 (495) 651-86-75
+				.head-tool
+					a(href="#").head-login Личный кабинет
+					a(href="#").cart
+						+icon("shopping-cart","icon")
+			.nav
+				.nav-list
+					a(href="#").nav-el Каталог
+					a(href="#").nav-el Сервис
+					a(href="#").nav-el О компании
+					a(href="#").nav-el Контакты
+				form(action="#").search
+					input(type="text" placeholder="Что ищем" class="input")
+					input(type="submit" value="Искать" class="btn--md btn--mark")
+
+
+	.content
+		.main-cont
+			.reestr
+				a(href="#" style="background-image:url('img/reestr-fasad.jpg')").reestr__el.reestr__el--fasad
+					.reestr__el-title Фасады
+				a(href="#" style="background-image:url('img/reestr-vitygki.jpg')").reestr__el.reestr__el--vitygki
+					.reestr__el-title Вытяжки
+				a(href="#" style="background-image:url('img/reestr-rychka.jpg')").reestr__el.reestr__el--rychka
+					.reestr__el-title Ручки
+				a(href="#").reestr__el-cat весь каталог
+				a(href="#" style="background-image:url('img/reestr-more.jpg')").reestr__el.reestr__el--more
+					.reestr__el-title Сопутствующие товары
+
+			.section
+				.section-title Наши акции
+				.slider-wrap.slider-wrap--simple
+					.slider-control.slider-control--left
+						+icon("arrow-left","icon")
+					.slider-control.slider-control--right
+						+icon("arrow-right","icon")
+					.slider-item.sale-slider
+						- for (var i=0;i<5;i++)
+							.slider-el
+								.sale
+									.sale-content
+										a(href="#").sale-title Скидка на всю колеекцию столешниц
+										.sale-text Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Разнообразный и богатый опыт консультация с широким активом представляет собой интересный эксперимент проверки форм развития.
+									.sale-img(style="background-image:url('img/item-2.jpg')")
+
+			.section
+				.section-title Наши новости
+				.news-slider.slider-scale
+					- for (var i=0;i<3;i++)
+						.news-slider__el
+							.news-slider__el-date 12.02.2019
+							a(href="#").news-slider__el-title Новый выбор фурнитуры
+							.news-slider__el-text Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия. Товарищи! консультация с широким активом требуют от нас анализа...
+						.news-slider__el
+							.news-slider__el-date 25.08.2019
+							a(href="#").news-slider__el-title Увеличение поставок от наших партнеров
+							.news-slider__el-text Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет выполнять ...
+						.news-slider__el
+							.news-slider__el-date 07.12.2019
+							a(href="#").news-slider__el-title Как правильно подобрать дерево для столешницы
+							.news-slider__el-text дейные соображения высшего порядка, а также консультация с широким активом требуют определения и уточнения систем массового участия. Разнообразный и богатый опыт ...
+
+			.section
+				.section-title.section-title--extend Актуальная складская программа
+				.storage
+					.storage__el.storage__el--dark
+						.storage__el-icon
+							img(src="img/kichen.svg", alt="")
+						.storage__el-info
+							.storage__el-title Наличие на складе
+							.storage__el-text Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач
+					.storage__el
+						.storage__el-icon
+							img(src="img/furniture.svg", alt="")
+						.storage__el-info
+							.storage__el-title Широкий ассортимент
+							.storage__el-text Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач
+					.storage__el
+						.storage__el-icon
+							img(src="img/car.svg", alt="")
+						.storage__el-info
+							.storage__el-title Актуальные модели
+							.storage__el-text Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач
+					.storage__el.storage__el--dark
+						.storage__el-icon
+							img(src="img/market.svg", alt="")
+						.storage__el-info
+							.storage__el-title Стабильные поставки
+							.storage__el-text Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач
+			.get-call
+				.btn--md.btn--mark Заказать звонок
+
+			.section
+				.section-title.section-title--extend Итальянское качество
+				.quality
+					.quality__el
+						.quality__el-img(style="background-image:url('img/item-5.jpg')")
+						.quality__el-content
+							.quality__el-title Сделано в италии
+							.quality__el-text Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.
+					.quality__el
+						.quality__el-img(style="background-image:url('img/item-1.jpg')")
+						.quality__el-content
+							.quality__el-title Прямые контакты
+							.quality__el-text Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании соответствующий условий активизации.
+					.quality__el
+						.quality__el-img(style="background-image:url('img/item-2.jpg')")
+						.quality__el-content
+							.quality__el-title экологичность
+							.quality__el-text С другой стороны консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного развития. Равным образом сложившаяся структура организации требуют
+					.quality__el
+						.quality__el-img(style="background-image:url('img/item-4.jpg')")
+						.quality__el-content
+							.quality__el-title Натуральные материалы
+							.quality__el-text Равным образом рамки и место обучения кадров требуют от нас анализа систем массового участия. Таким образом новая модель организационной деятельности
+
+			.section
+				.section-title.section-title--extend Наши партнеры
+				.slider-wrap.slider-wrap--simple
+					.slider-control.slider-control--left
+						+icon("arrow-left","icon")
+					.slider-control.slider-control--right
+						+icon("arrow-right","icon")
+					.slider-item.slider-scale.slider-scale--sm.partner
+						- for (var i=0;i<3;i++)
+							.partner__el
+								img(src="img/attimec.jpg", alt="")
+							.partner__el
+								img(src="img/mp.jpg", alt="")
+
+							.partner__el
+								img(src="img/stival.jpg", alt="")
+							.partner__el
+								img(src="img/vibo.jpg", alt="")
+
+			.section
+				.section-title.section-title--extend Остались вопросы?
+				.form
+					.form-info
+						form(action="#")
+							.input-row
+								input(type="text" placeholder="Ваше имя" class="input")
+							.input-row
+								input(type="text" placeholder="Ваш телефон" class="input")
+							.input-row
+								input(type="text" placeholder="Ваш email" class="input")
+							.input-row
+								input(type="submit" value="Заказать звонок" class="btn--md btn--mark")
+					.form-img(style="background-image:url('img/item-4.jpg')")
+	+footer()
+include ./block_html/_script.pug

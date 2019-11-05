@@ -1,0 +1,113 @@
+//  ============================ Typography ============================
+
+//webfont('RUB', 'rouble-webfont', 'normal')
+//Add fotn rub write .rub a - (a,b,c,d - change type font)
+
+//font(name,file,size)
+font('Avenir','AvenirNextCyr-UltraLight',100)
+font('Avenir','AvenirNextCyr-Thin',200)
+font('Avenir','AvenirNextCyr-Light',300)
+font('Avenir','AvenirNextCyr-Regular',400)
+font('Avenir','AvenirNextCyr-Medium',500)
+font('Avenir','AvenirNextCyr-Bold',700)
+
+$v-font = 'Avenir', sans-serif
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+/*
+font-size 15px
+@extend .type--sm
+
+font-size 17px
+@extend .type--main
+
+font-size 20px
+@extend .type--md
+
+font-size 25px
+@extend .type--mdx
+
+font-size 28px
+@extend .type--lg
+
+font-size 30px
+@extend .type--lgx
+
+font-size 35px
+@extend .type--xl
+*/
+
+.type--xs
+	typeSize(12,10)
+
+.type--sm
+	typeSize(15,12)
+
+.type--main
+	typeSize(17,14)
+
+.type--md
+	typeSize(20,16)
+
+.type--mdx
+	typeSize(25,18)
+
+.type--lg
+	typeSize(28,20)
+
+.type--lgx
+	typeSize(30,20)
+
+.type--xl
+	typeSize(35,24)
+
+.type--bold
+	font-weight bold
+
+h1
+	@extend .type--xl
+h2
+	@extend .type--lg
+h3
+	@extend .type--main
+h4
+	@extend .type--sm
+h5
+	@extend .type--xs
+
+a
+	color $link-color
+	text-decoration: none
+	tr()
+	&:hover
+		color darken($link-color,20)
+	&:visiter
+		color darken($link-color,30)
+
+p
+	@extend .type--main
+
+.link--mark
+	color $blue
+	&:hover
+		color darken($mark,20)
+	&:visiter
+		color darken($mark,30)
+
+.link--main
+	color $link-color
+	hover-underline($link-color)
+	&:hover
+		color darken($link-color,20)
+	&:visiter
+		color darken($link-color,30)
+
+.link--text
+	color $link-color
+	text-decoration underline
+	&:hover
+		text-decoration none

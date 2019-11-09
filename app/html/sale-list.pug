@@ -1,0 +1,35 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item.toolbar-item--stick
+						.toolbar-head О компании
+						a(href="#").toolbar-el Veneto
+						a(href="#").toolbar-el Дилерская сеть
+						a(href="#").toolbar-el Поставщики
+						a(href="#").toolbar-el.toolbar-el--active Акции
+						a(href="#").toolbar-el Новости
+				.info
+					.title Наши акции
+					- for (var i=0;i<6;i++)
+						.information-item
+							.information-item__img(style="background-image:url('img/item-1.jpg')")
+							.information-item__info
+								.information-item__title Купить кухню из прошлой коллекции
+								.information-item__text.text
+									p Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. С другой стороны рамки и место обучения кадров требуют определения и уточнения новых предложений.
+								a(href="#").read-more Читать далее
+					.pag
+						.pag__el.pag__el--active 1
+						.pag__el 2
+						.pag__el 3
+
+			+form()
+	+footer()
+include ./block_html/_script.pug

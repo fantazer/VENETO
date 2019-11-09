@@ -1,0 +1,68 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item.toolbar-item--stick
+						.toolbar-head каталог
+						a(href="#").toolbar-el Фасады
+						a(href="#").toolbar-el Ручки
+						a(href="#").toolbar-el.toolbar-el--active Вытяжки
+						a(href="#").toolbar-el Сопутствующие товары
+				.info
+					.title Вытяжки
+					.filter-wrap
+						.filter__el
+							.filter__el-name Тип монтажа
+							.filter__el-val
+								select.select-beauty
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+						.filter__el
+							.filter__el-name Цвета
+							.filter__el-val
+								select.select-beauty
+									option(value="1") ВариантВариант 1 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+						.filter__el
+							.filter__el-name Материал
+							.filter__el-val
+								select.select-beauty
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+
+					.catalog
+						- for (var i=0;i<6;i++)
+							a(href="#").catalog__el
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/goods-1.jpg')")
+								.catalog__el-text IRON - FR_A_5_1_3000
+							a(href="#").catalog__el
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/goods-2.jpg')")
+								.catalog__el-text IRON - VID_1_A_3_6000
+							a(href="#").catalog__el
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/goods-3.jpg')")
+								.catalog__el-text IRON - VID_2_6000
+
+					.pag
+						.pag__el.pag__el--active 1
+						.pag__el 2
+						.pag__el 3
+
+
+			+form()
+	+footer()
+include ./block_html/_script.pug

@@ -1,0 +1,20 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.reestr.reestr--sm
+				a(href="#" style="background-image:url('img/reestr-fasad.jpg')").reestr__el.reestr__el--fasad
+					.reestr__el-title Фасады
+				a(href="#" style="background-image:url('img/reestr-vitygki.jpg')").reestr__el.reestr__el--vitygki
+					.reestr__el-title Вытяжки
+				a(href="#" style="background-image:url('img/reestr-rychka.jpg')").reestr__el.reestr__el--rychka
+					.reestr__el-title Ручки
+				a(href="#" style="background-image:url('img/reestr-more.jpg')").reestr__el.reestr__el--more
+					.reestr__el-title Сопутствующие товары
+			+form()
+	+footer()
+include ./block_html/_script.pug

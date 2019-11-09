@@ -1,0 +1,35 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item.toolbar-item--stick
+						.toolbar-head О компании
+						a(href="#").toolbar-el Veneto
+						a(href="#").toolbar-el Дилерская сеть
+						a(href="#").toolbar-el Поставщики
+						a(href="#").toolbar-el Акции
+						a(href="#").toolbar-el.toolbar-el--active Новости
+				.info
+					.title Наши новости
+					- for (var i=0;i<6;i++)
+						.information-item
+							.information-item__img(style="background-image:url('img/item-4.jpg')")
+							.information-item__info
+								.information-item__title Подборка новых каталогов мебели
+								.information-item__text.text
+									p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки систем массового участия.
+								a(href="#").read-more Читать далее
+					.pag
+						.pag__el.pag__el--active 1
+						.pag__el 2
+						.pag__el 3
+
+			+form()
+	+footer()
+include ./block_html/_script.pug

@@ -1,3 +1,22 @@
 mixin header()
 	//block header
+	.header
+		.main-cont
+			.head
+				a(href="/").logo
+					img(src="img/logo.svg", alt="")
+				a(href="tel:+7 (495) 651-86-75").head__phone +7 (495) 651-86-75
+				.head-tool
+					a(href="#").head-login Личный кабинет
+					a(href="#").cart
+						+icon("shopping-cart","icon")
+			.nav
+				.nav-list
+					a(href="#").nav-el Каталог
+					a(href="#").nav-el Сервис
+					a(href="#").nav-el О компании
+					a(href="#").nav-el Контакты
+				form(action="#").search
+					input(type="text" placeholder="Что ищем" class="input")
+					input(type="submit" value="Искать" class="btn--md btn--mark")
 	//block header end

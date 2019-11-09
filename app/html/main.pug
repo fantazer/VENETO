@@ -3,26 +3,6 @@ include block_html/_include.pug
 
 .page
 	+header()
-	.header
-		.main-cont
-			.head
-				a(href="/").logo
-					img(src="img/logo.svg", alt="")
-				a(href="tel:+7 (495) 651-86-75").head__phone +7 (495) 651-86-75
-				.head-tool
-					a(href="#").head-login Личный кабинет
-					a(href="#").cart
-						+icon("shopping-cart","icon")
-			.nav
-				.nav-list
-					a(href="#").nav-el Каталог
-					a(href="#").nav-el Сервис
-					a(href="#").nav-el О компании
-					a(href="#").nav-el Контакты
-				form(action="#").search
-					input(type="text" placeholder="Что ищем" class="input")
-					input(type="submit" value="Искать" class="btn--md btn--mark")
-
 
 	.content
 		.main-cont
@@ -101,6 +81,23 @@ include block_html/_include.pug
 				.btn--md.btn--mark Заказать звонок
 
 			.section
+				.section-title.section-title--extend Преимущества
+				.slider-wrap.slider-wrap--simple
+					.slider-control.slider-control--left
+						+icon("arrow-left","icon")
+					.slider-control.slider-control--right
+						+icon("arrow-right","icon")
+					.slider-item.advant-slider
+						- for (var i=0;i<5;i++)
+							.advant-wrap
+								.advant-el
+									.advant-bg
+									.advant-info
+										.advant-title опытная команда специалистов
+										.advant-text 20 летний опыт нашей команды, обеспечит вам оперативное решение любых задач с поставками фасадных систем
+									.advant-img(style="background-image:url('img/item-4.jpg')")
+
+			.section
 				.section-title.section-title--extend Итальянское качество
 				.quality
 					.quality__el
@@ -143,19 +140,6 @@ include block_html/_include.pug
 							.partner__el
 								img(src="img/vibo.jpg", alt="")
 
-			.section
-				.section-title.section-title--extend Остались вопросы?
-				.form
-					.form-info
-						form(action="#")
-							.input-row
-								input(type="text" placeholder="Ваше имя" class="input")
-							.input-row
-								input(type="text" placeholder="Ваш телефон" class="input")
-							.input-row
-								input(type="text" placeholder="Ваш email" class="input")
-							.input-row
-								input(type="submit" value="Заказать звонок" class="btn--md btn--mark")
-					.form-img(style="background-image:url('img/item-4.jpg')")
+			+form()
 	+footer()
 include ./block_html/_script.pug

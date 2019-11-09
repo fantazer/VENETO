@@ -192,11 +192,11 @@ body
 // select
 .nice-select
 	br(5px)
-	margin-bottom: 20px
 	display: block
 	color #000000
 	font-size 14px
 	font-weight 700
+	width: 100%
 	.list
 		width: calc(100% )
 		left 0px
@@ -354,6 +354,7 @@ select.select-beauty
 		padding: 10px
 		width: 100%
 	.btn--md
+		border-radius 0
 		padding: 15px
 //.btn--mark
 
@@ -408,24 +409,24 @@ select.select-beauty
 	position relative
 
 //Навигация снаружи
-.slider-wrap--simple
-	.slider-control
-		flex(mid)
-		tr(all)
-		size 40px
-		background: white
-		position: absolute
-		top 50%
-		margin-top: -20px
-		z-index 10
-		cp()
-		border 1px solid #efefef
-		&:hover
-			background: $mark
-			.icon
-				fill white
+.slider-control
+	flex(mid)
+	tr(all)
+	size 40px
+	background: white
+	position: absolute
+	top 50%
+	margin-top: -20px
+	z-index 10
+	cp()
+	border 1px solid #efefef
+	&:hover
+		background: $mark
 		.icon
-			size 14px
+			fill white
+	.icon
+		size 14px
+.slider-wrap--simple
 	.slider-control--left
 		left -20px
 	.slider-control--right
@@ -436,6 +437,10 @@ select.select-beauty
 		margin: 0 10px
 	.slick-list
 		margin: 0 -10px
+	.slider-control--left
+		left -50px
+	.slider-control--right
+		right -50px
 .slick-track
 	display: flex !important;
 .slick-slide
@@ -542,6 +547,9 @@ select.select-beauty
 .reestr__el--more
 	grid-area: 2 / 4 / 4 / 5
 
+.reestr--sm
+	.reestr__el--more
+		grid-area: 1 / 4 / 4 / 5
 .news-slider__el
 	padding: 40px 30px 50px 30px
 	background: white
@@ -697,3 +705,423 @@ select.select-beauty
 	text-decoration: underline
 	display inline-block
 	margin-top: 30px
+
+.advant-el
+	f()
+	position relative
+	justify-content space-between
+.advant-bg
+	position absolute
+	height: 100%
+	width: 100%
+	top 0
+	left 0
+	background: $mark
+.advant-info
+	width: 45%
+	z-index 10
+	padding: 10% 5%
+.advant-img
+	bg-full()
+	padding: 20% 10%
+	width: 40%
+	z-index 10
+	transform translateY(50px) translateX(-50px)
+	box-shadow 0px -2px 18px #4b5563
+
+.advant-title
+	color white
+	up()
+	margin-bottom: 20px
+	font-weight: 700
+	line-height: 1.2
+	@extend .type--lg
+.advant-text
+	color white
+	line-height: 1.6
+
+.advant-slider
+	.slick-list
+		padding-bottom: 70px
+
+.soc-row
+	position: fixed
+	top 15%
+	right 0
+.soc-row__el
+	display block
+	margin-bottom: 5px
+	img
+		size 30px
+
+.bread-row
+	+below(1200px)
+		margin-bottom: 30px
+	+below(768px)
+		display: none
+		margin-top: 20px
+	flex(between)
+	margin: 30px 0
+.bread
+	+below(768px)
+		display: none
+	f()
+	fw()
+.bread__el
+	margin-right: 20px
+	position: relative
+	opacity: .6
+	line-height: 1.6
+	tr()
+	&:hover
+		color $mark
+		opacity: 1
+	&:before
+		content '/'
+		position: absolute
+		right: -12px
+	&:last-child
+		opacity: .4!important
+		&:before
+			content ''
+			display: none
+
+
+.layer
+	f()
+	justify-content space-between
+
+.toolbar
+	width: 250px
+.toolbar-item
+	background: white
+.toolbar-head
+	up()
+	background: $mark
+	color white
+	padding: 10px
+.toolbar-head--link
+	f()
+	align-items center
+	@extend .type--sm
+	.icon
+		size 16px
+		fill white
+		margin-right: 10px
+.toolbar-el
+	padding: 15px
+	color $mark
+	display block
+	border-bottom 1px solid #f5f8fa
+	tr()
+	&:last-child
+		border 0
+	&:hover
+		background: #edf3f7
+.toolbar-el--active
+	background: #edf3f7
+.info
+	margin-left: 30px
+	width calc(100% - 300px)
+.goods-title
+	font-weight: 700
+	color $mark
+	@extend .type--xl
+	up()
+	margin-top: 0
+	margin-bottom: 30px
+.goods
+	background: white
+	padding: 30px
+	f()
+	justify-content space-between
+	align-items:flex-start
+	margin-bottom: 80px
+.goods-img
+	bg-full()
+	padding: 20% 10%
+	width: 25%
+.goods-info
+	width: calc(75% - 30px)
+//.text
+
+.kind-title
+	up()
+	font-size: 48px
+	color $mark
+	padding-left: 30px
+	transform translateY(50%)
+	max-width 400px
+.kind-cont
+	background: white
+	padding: 80px 30px 40px 30px
+
+.kind-el__img
+	bg-full()
+	background-size contain
+	padding: 50% 10%
+	margin-bottom: 30px
+	display block!important
+	width 100%!important
+.kind-el__name
+	text-align center
+
+.kind
+	margin-bottom: 80px
+
+.kind-el
+	display block!important
+
+//.akkord
+.akkord--main
+	+below(640px)
+		margin-top: -50px
+
+.akkord__el
+	border 1px solid #e5e5e5
+	margin-top: -1px
+	cp()
+	&:hover
+		.akkord__el-head-icon
+			&:before
+				content ''
+				background: $pink
+			&:after
+				content ''
+				background: $pink
+.akkord__el-head
+	+below(640px)
+		padding: 20px
+	padding: 15px
+	flex(between)
+	color black
+.akkord__el-head-text
+	+below(640px)
+		font-weight: 400
+		line-height: 1.6
+	width: 80%
+	font-size: 18px
+	font-weight: 500
+
+
+
+.akkord__el-head-icon
+	+below(640px)
+		size 16px
+	position: relative
+	size 22px
+	&:before
+		content ''
+		tr(all)
+		height: 2px
+		width: 100%
+		background: gray
+		position: absolute
+		top calc(50% - 1px)
+	&:after
+		content ''
+		tr(all)
+		height: 100%
+		width: 2px
+		background: gray
+		position: absolute
+		left calc(50% - 1px)
+
+.akkord__el-content
+	display: none
+	padding: 10px
+
+.akkord__el--active
+	border-bottom 1px solid $border-color
+	background: #eeeeee
+	.akkord__el-head-text
+		color $green
+	.akkord__el-head-icon
+		&:after
+			content ''
+			transform rotate(90deg)
+
+// increment
+.incr
+	f()
+	position relative
+.incr--full
+	width: 100%
+	justify-content space-between
+	background: white
+	border 1px solid $border-color
+.incr__nav
+	flex(mid)
+	tr()
+	size 30px
+	background white
+	.icon
+		size 14px
+		fill #b3b3b3
+	&:hover
+		cp()
+		background-color darken($mark,10)
+		border 0
+		.icon
+			fill white
+	&:active
+		background-color black
+.incr__minus
+	background: #f5f8fa
+	.icon
+		fill black
+.incr__plus
+	background: #f5f8fa
+	.icon
+		fill black
+.incr__val
+	flex(mid)
+	background white
+	size 30px
+	font-size 20px
+	position relative
+	tr(all)
+	span
+		outline: none
+		user-select: none
+
+table th, table td
+	vertical-align middle
+
+.gallary-el
+	bg-full()
+	padding: 30% 10%
+	display block
+	width: 100%
+	height: 100%
+
+.instr
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(2, 1fr)
+.instr__el
+	f()
+	align-items center
+	padding: 15px
+	border 1px solid $border-color
+	&:hover
+		border 1px solid $mark
+
+.instr-icon
+	margin-right: 10px
+	.icon
+		size 35px
+		fill $mark
+.instr__el-name
+	font-weight: 500
+
+.title
+	font-weight: 700
+	color $mark
+	@extend .type--xl
+	up()
+	margin-top: 0
+	margin-bottom: 30px
+
+.information-item
+	background: white
+	margin-bottom: 30px
+	f()
+	align-items:flex-start
+	padding: 20px
+	margin-top: 50px
+.information-item__img
+	width: 35%
+	bg-full()
+	transform translateY(-50px)
+	padding: 17% 10%
+	margin-bottom: -50px
+.information-item__info
+	width: 65%
+	margin-left: 5%
+.information-item__title
+	@extend .type--mdx
+	margin-bottom: 20px
+	font-weight: 700
+	color $mark
+
+.read-more
+	display inline-block
+	text-decoration: underline
+	margin-top: 30px
+
+.pag
+	flex(mid)
+	fw()
+	margin: 40px 0
+.pag__el
+	flex(mid)
+	cp()
+	tr()
+	margin: 10px
+	padding: 10px 15px
+	border 1px solid $border-color
+	display: inline-block
+	&:hover
+		border-color $mark
+		color $mark
+.pag__el--active
+	border-color $mark
+	color $mark
+
+.news-full
+	+below(768px)
+		fw()
+	f()
+	align-items: flex-start
+	justify-content: space-between
+.news-full__img
+	+below(768px)
+		width: 100%
+		margin-bottom: 20px
+		padding: 30% 10%
+	width: 48%
+	bg-full()
+	overflow: hidden
+	padding: 24% 10%
+.news-full__cont
+	+below(768px)
+		width: 100%
+	width: 45%
+
+.navigation
+	flex(between)
+	margin: 40px 0
+
+.navigation__el
+	@extend .btn--md
+	@extend .btn--light
+	.icon
+		fill $mark
+
+.filter-wrap
+	display: grid
+	grid-gap 10px
+	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+	margin-bottom: 30px
+.filter__el-name
+	font-weight: 700
+	margin-bottom: 10px
+
+.catalog
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(3, 1fr)
+
+.catalog__el-img-wrap
+	background-color white
+	padding: 20px
+	margin-bottom: 20px
+.catalog__el-img
+	bg-full()
+	padding: 50% 10%
+	background-size contain
+.catalog__el-text
+	display block
+	text-align center
+	font-weight: 500

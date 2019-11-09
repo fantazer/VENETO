@@ -1,0 +1,164 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item.toolbar-item--stick
+						a(href="#").toolbar-head.toolbar-head--link
+							+icon("arrow-left-fat","icon")
+							span вернуться в каталог
+						a(href="#fasad" rel='m_PageScroll2id').toolbar-el.toolbar-el--active Фасады
+						a(href="#dekor" rel='m_PageScroll2id').toolbar-el Декоры
+						a(href="#meter" rel='m_PageScroll2id').toolbar-el Погонаж
+						a(href="#size" rel='m_PageScroll2id').toolbar-el Размеры
+						a(href="#photo" rel='m_PageScroll2id').toolbar-el Фотографии
+						a(href="#scheme" rel='m_PageScroll2id').toolbar-el Схемы
+				.info
+					.goods-title Ручка-скоба Дафна 32мм правая, восточное серебро вторая версия
+					.goods
+						.goods-img(style="background-image:url('img/furniture-1.jpg')")
+						.goods-info.text
+							p Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+							p Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия.
+							p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+					.kind#fasad
+						.kind-title Фасады
+						.kind-cont
+							.slider-wrap.slider-wrap--extend
+								.slider-control.slider-control--left
+									+icon("arrow-left","icon")
+								.slider-control.slider-control--right
+									+icon("arrow-right","icon")
+								.slider-item.kind-slider
+									- for (var i=0;i<3;i++)
+										.kind-el
+											a(href="img/furniture-2.png" data-fancybox="images" style="background-image:url('img/furniture-2.png')").fancybox.kind-el__img
+											.kind-el__name Решетка декоративная для фасадов
+										.kind-el
+											a(href="img/furniture-3.png" data-fancybox="images" style="background-image:url('img/furniture-3.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой полукруглый
+										.kind-el
+											a(href="img/furniture-4.png" data-fancybox="images" style="background-image:url('img/furniture-4.png')").fancybox.kind-el__img
+											.kind-el__name Фасад под стекло трапецеидальный
+										.kind-el
+											a(href="img/furniture-5.png" data-fancybox="images" style="background-image:url('img/furniture-5.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой 956/716х147
+					.kind#dekor
+						.kind-title Декоративные элементы
+						.kind-cont
+							.slider-wrap.slider-wrap--extend
+								.slider-control.slider-control--left
+									+icon("arrow-left","icon")
+								.slider-control.slider-control--right
+									+icon("arrow-right","icon")
+								.slider-item.kind-slider
+									- for (var i=0;i<3;i++)
+										.kind-el
+											a(href="img/furniture-6.png" data-fancybox="images" style="background-image:url('img/furniture-6.png')").fancybox.kind-el__img
+											.kind-el__name Решетка декоративная для фасадов
+										.kind-el
+											a(href="img/furniture-7.png" data-fancybox="images" style="background-image:url('img/furniture-7.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой полукруглый
+										.kind-el
+											a(href="img/furniture-8.png" data-fancybox="images" style="background-image:url('img/furniture-8.png')").fancybox.kind-el__img
+											.kind-el__name Фасад под стекло трапецеидальный
+										.kind-el
+											a(href="img/furniture-9.png" data-fancybox="images" style="background-image:url('img/furniture-9.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой 956/716х147
+					.kind#meter
+						.kind-title Погонажные компоненты
+						.kind-cont
+							.slider-wrap.slider-wrap--extend
+								.slider-control.slider-control--left
+									+icon("arrow-left","icon")
+								.slider-control.slider-control--right
+									+icon("arrow-right","icon")
+								.slider-item.kind-slider
+									- for (var i=0;i<3;i++)
+										.kind-el
+											a(href="img/furniture-10.png" data-fancybox="images" style="background-image:url('img/furniture-10.png')").fancybox.kind-el__img
+											.kind-el__name Решетка декоративная для фасадов
+										.kind-el
+											a(href="img/furniture-11.png" data-fancybox="images" style="background-image:url('img/furniture-11.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой полукруглый
+										.kind-el
+											a(href="img/furniture-12.png" data-fancybox="images" style="background-image:url('img/furniture-12.png')").fancybox.kind-el__img
+											.kind-el__name Фасад под стекло трапецеидальный
+										.kind-el
+											a(href="img/furniture-12.png" data-fancybox="images" style="background-image:url('img/furniture-12.png')").fancybox.kind-el__img
+											.kind-el__name Фасад с филенкой 956/716х147
+					.kind#size
+						.kind-title Таблица размеров
+						.kind-cont
+							.akkord
+								- for (var j=0;j<10;j++)
+									.akkord__el
+										.akkord__el-head
+											.akkord__el-head-text Портал (комплект из фасадов и декоративных элементов)
+											.akkord__el-head-icon
+										.akkord__el-content
+											table
+												thead
+													tr
+														td Артикул
+														td Наименование
+														td Цена
+														td Количества
+														td Купить
+												tbody
+													- for (var i=0;i<8;i++)
+														tr
+															td IRO000
+															td Фасад Айрон 956 х 597
+															td 109.33
+															td
+																.incr.incr--full
+																	.incr__minus.incr__nav.incr--one
+																		+icon("minus","icon")
+																	.incr__val
+																		span 1
+																		.incr__val-coner
+																	.incr__plus.incr__nav
+																		+icon("plus","icon")
+															td
+																.btn--sm.btn--mark.btn--full В корзину
+					.kind#photo
+						.kind-title готовые решения
+						.kind-cont
+							.text
+								p Модель Альба Венге - это новый способ создания кухонного пространства в гармонии с современным образом жизни. Многообразие вариантов комплектации позволяют создавать яркие индивидуальные интерьерные решения. Редкая утонченность и сдержанная эстетика делают кухню Альба Венге похожей на элегантный современный зал место для встречи семьи или друзей, располагающее к комфорту и общению.
+							.slider-wrap.slider-wrap--extend
+								.slider-control.slider-control--left
+									+icon("arrow-left","icon")
+								.slider-control.slider-control--right
+									+icon("arrow-right","icon")
+								.slider-item.gallary-slider
+									- for (var i=0;i<3;i++)
+										.gallary-wrap
+											a(href="img/item-1.jpg" data-fancybox="images" style="background-image:url('img/item-1.jpg')").fancybox.gallary-el
+										.gallary-wrap
+											a(href="img/item-2.jpg" data-fancybox="images" style="background-image:url('img/item-2.jpg')").fancybox.gallary-el
+										.gallary-wrap
+											a(href="img/item-3.jpg" data-fancybox="images" style="background-image:url('img/item-3.jpg')").fancybox.gallary-el
+					.kind#scheme
+						.kind-title Инструкции и схемы
+						.kind-cont
+							.instr
+								- for (var i=0;i<4;i++)
+									a(href="#").instr__el
+										.instr-icon
+											+icon("pdf","icon")
+										.instr-name Инстукция по уходу
+									a(href="#").instr__el
+										.instr-icon
+											+icon("maintenance","icon")
+										.instr-name Схема сборки
+			+form()
+
+	+footer()
+include ./block_html/_script.pug

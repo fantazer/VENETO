@@ -1404,6 +1404,9 @@ select.select-beauty {
 .slick-slide:focus {
   outline: none !important;
 }
+.slick-slider {
+  position: relative;
+}
 .slider-wrap {
   position: relative;
 }

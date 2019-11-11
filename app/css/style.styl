@@ -383,8 +383,6 @@ select.select-beauty
 	+below(768px)
 		font-size: 24px
 		margin-bottom: 20px
-	+below(640px)
-		font-size: 18px
 	font-weight: 700
 	up()
 	color $mark
@@ -493,8 +491,12 @@ select.select-beauty
 	.slick-list
 		margin: 0 -10px
 	.slider-control--left
+		+below(768px)
+			left -40px
 		left -50px
 	.slider-control--right
+		+below(768px)
+			right -40px
 		right -50px
 .slick-track
 	display: flex !important;
@@ -512,6 +514,9 @@ select.select-beauty
 	align-items: stretch
 	tr()
 .slick-center
+	+below(480px)
+		box-shadow 0 9px 16px #a2b8c5
+
 	transform: scale(1.2);
 	box-shadow 0 18px 32px #a2b8c5
 	opacity: 1 !important
@@ -561,6 +566,8 @@ select.select-beauty
 		margin: 0 20px
 .slider-scale--sm
 	.slick-list
+		+below(480px)
+			padding: 40px 20px 60px 20px!important
 		padding: 60px 20px!important
 // slick === end
 
@@ -628,6 +635,8 @@ select.select-beauty
 
 .reestr--sm
 	.reestr__el--more
+		+below(480px)
+			grid-area: initial
 		grid-area: 1 / 4 / 4 / 5
 .news-slider__el
 	+below(768px)
@@ -763,6 +772,7 @@ select.select-beauty
 	+below(768px)
 		width: 100%
 		transform translateX(0px)
+		padding: 30px
 	background: white
 	width: 50%
 	padding: 60px
@@ -900,7 +910,6 @@ select.select-beauty
 	+below(1200px)
 		margin-bottom: 30px
 	+below(768px)
-		display: none
 		margin-top: 20px
 	flex(between)
 	margin: 30px 0
@@ -930,11 +939,19 @@ select.select-beauty
 
 
 .layer
+	+below(768px)
+		fw()
 	f()
 	justify-content space-between
 
 .toolbar
+	+below(768px)
+		order 1
+		width: 100%
 	width: 250px
+.toolbar--mobile
+	+below(768px)
+		display none
 .toolbar-item
 	background: white
 .toolbar-head
@@ -963,6 +980,9 @@ select.select-beauty
 .toolbar-el--active
 	background: #edf3f7
 .info
+	+below(768px)
+		margin-left: 0
+		width: 100%
 	margin-left: 30px
 	width calc(100% - 300px)
 .goods-title
@@ -973,6 +993,11 @@ select.select-beauty
 	margin-top: 0
 	margin-bottom: 30px
 .goods
+	+below(768px)
+		margin-bottom: 30px
+	+below(480px)
+		fw()
+		padding: 15px
 	background: white
 	padding: 30px
 	f()
@@ -980,14 +1005,25 @@ select.select-beauty
 	align-items:flex-start
 	margin-bottom: 80px
 .goods-img
+	+below(480px)
+		width: 100%
+		margin-bottom: 20px
+		padding: 55% 10%
+		background-size contain
 	bg-full()
 	padding: 20% 10%
 	width: 25%
 .goods-info
+	+below(480px)
+		width: 100%
 	width: calc(75% - 30px)
 //.text
 
 .kind-title
+	+below(768px)
+		font-size: 36px
+	+below(480px)
+		font-size: 20px
 	up()
 	font-size: 48px
 	color $mark
@@ -995,9 +1031,15 @@ select.select-beauty
 	transform translateY(50%)
 	max-width 400px
 .kind-cont
+	+below(480px)
+		padding: 40px 30px 40px 30px
 	background: white
 	padding: 80px 30px 40px 30px
-
+	.text
+		margin-bottom: 30px
+.kind-cont--size
+	+below(480px)
+		padding: 30px 20px
 .kind-el__img
 	bg-full()
 	background-size contain
@@ -1009,6 +1051,8 @@ select.select-beauty
 	text-align center
 
 .kind
+	+below(768px)
+		margin-bottom: 30px
 	margin-bottom: 80px
 
 .kind-el
@@ -1041,6 +1085,7 @@ select.select-beauty
 	+below(640px)
 		font-weight: 400
 		line-height: 1.6
+		font-size: 12px
 	width: 80%
 	font-size: 18px
 	font-weight: 500
@@ -1070,6 +1115,9 @@ select.select-beauty
 		left calc(50% - 1px)
 
 .akkord__el-content
+	+below(768px)
+		max-width 100%
+		overflow-x scroll
 	display: none
 	padding: 10px
 
@@ -1138,6 +1186,8 @@ table th, table td
 	height: 100%
 
 .instr
+	+below(480px)
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(2, 1fr)
@@ -1166,6 +1216,9 @@ table th, table td
 	margin-bottom: 30px
 
 .information-item
+	+below(640px)
+		margin-top: 0
+		fw()
 	background: white
 	margin-bottom: 30px
 	f()
@@ -1173,12 +1226,19 @@ table th, table td
 	padding: 20px
 	margin-top: 50px
 .information-item__img
+	+below(640px)
+		width: 100%
+		transform translateY(0px)
+		margin-bottom: 20px
+		padding: 35% 10%
 	width: 35%
 	bg-full()
 	transform translateY(-50px)
 	padding: 17% 10%
 	margin-bottom: -50px
 .information-item__info
+	+below(640px)
+		width: 100%
 	width: 65%
 	margin-left: 5%
 .information-item__title
@@ -1193,10 +1253,15 @@ table th, table td
 	margin-top: 30px
 
 .pag
+	+below(480px)
+		margin: 20px 0
 	flex(mid)
 	fw()
 	margin: 40px 0
 .pag__el
+	+below(640px)
+		padding: 5px 8px
+		margin 5px
 	flex(mid)
 	cp()
 	tr()
@@ -1236,9 +1301,14 @@ table th, table td
 	margin: 40px 0
 
 .navigation__el
+	+below(640px)
+		font-size: 12px
+		padding: 10px
 	@extend .btn--md
 	@extend .btn--light
 	.icon
+		+below(640px)
+			size 16px
 		fill $mark
 
 .filter-wrap
@@ -1251,6 +1321,8 @@ table th, table td
 	margin-bottom: 10px
 
 .catalog
+	+below(480px)
+		grid-template-columns: repeat(2, 1fr)
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(3, 1fr)

@@ -7,7 +7,7 @@ include block_html/_include.pug
 		.main-cont
 			+bread()
 			.layer
-				.toolbar
+				.toolbar.toolbar--mobile
 					.toolbar-item.toolbar-item--stick
 						a(href="#").toolbar-head.toolbar-head--link
 							+icon("arrow-left-fat","icon")
@@ -94,7 +94,7 @@ include block_html/_include.pug
 											.kind-el__name Фасад с филенкой 956/716х147
 					.kind#size
 						.kind-title Таблица размеров
-						.kind-cont
+						.kind-cont.kind-cont--size
 							.akkord
 								- for (var j=0;j<10;j++)
 									.akkord__el
@@ -126,7 +126,7 @@ include block_html/_include.pug
 																	.incr__plus.incr__nav
 																		+icon("plus","icon")
 															td
-																.btn--sm.btn--mark.btn--full В корзину
+																.btn--sm.btn--mark.btn--full.btn--inline В корзину
 					.kind#photo
 						.kind-title готовые решения
 						.kind-cont

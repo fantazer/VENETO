@@ -26,6 +26,14 @@
         <div class="header">
             <div class="main-cont">
                 <div class="head">
+                    <div class="head-toggle">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
                     <a class="logo" href="/">
                         <img src="img/logo.svg" alt="" />
                     </a>
@@ -37,6 +45,27 @@
                                 <use xlink:href="#shopping-cart"></use>
                             </svg>
                         </a>
+                    </div>
+                    <div class="slide-menu">
+                        <div class="slide-menu__list">
+                            <a class="slide-menu__list-el" href="#">Каталог</a>
+                            <a class="slide-menu__list-el" href="#">Сервис</a>
+                            <a class="slide-menu__list-el" href="#">О компании</a>
+                            <a class="slide-menu__list-el" href="#">Контакты</a>
+                            <a class="slide-menu__list-el" href="#">Личный кабинет</a>
+                        </div>
+                        <a class="header-top-phone" href="tel:8 800 000 00 00">
+                            <div class="header-top-phone__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="header-top-phone__val">8 800 000 00 00</div>
+                        </a>
+                        <form class="search" action="#">
+                            <input class="input" type="text" placeholder="Что ищем" />
+                            <input class="btn--md btn--mark" type="submit" value="Искать" />
+                        </form>
                     </div>
                 </div>
                 <div class="nav">

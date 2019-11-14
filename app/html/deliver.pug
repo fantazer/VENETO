@@ -1,0 +1,95 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar.toolbar--mobile
+					.toolbar-item.toolbar-item--stick
+						.toolbar-head Доставка
+						a(href="#deliver" rel='m_PageScroll2id').toolbar-el.toolbar-el--active Veneto
+						a(href="#reclamacion" rel='m_PageScroll2id').toolbar-el Рекламация
+						a(href="#aducation" rel='m_PageScroll2id').toolbar-el Обучение
+						a(href="#catalog" rel='m_PageScroll2id').toolbar-el Каталоги
+				.info
+					.title Доставка
+					.deliver-step#deliver
+						.deliver-step__el
+							.deliver-step__icon
+								img(src="img/doc.svg", alt="")
+							.deliver-step__info
+								.deliver-step__title Шаг 1
+								.deliver-step__text Заполните заявку
+						.deliver-step__el
+							.deliver-step__icon
+								img(src="img/send.svg", alt="")
+							.deliver-step__info
+								.deliver-step__title Шаг 2
+								.deliver-step__text Отправьте менеджеру
+						.deliver-step__el
+							.deliver-step__icon
+								img(src="img/deliver-white.svg", alt="")
+							.deliver-step__info
+								.deliver-step__title Шаг 3
+								.deliver-step__text Ожидайте доставку
+					.deliver-info-wrap
+						.deliver-info
+							.deliver-info__el
+								.deliver-info__title Условия
+								.deliver-info__text Поддержание стабильной складской программы требует затрат ресурсов. Мы гарантируем комфортные условия доставки только при наличии полной предоплаты. Наши специалисты проработали все процессы отгрузки клиентов, что позволяет нам обеспечить вам качественную упаковку и своевременную доставку.
+							.deliver-info__el.deliver-info__el--mark
+								.deliver-info__title Сроки
+								.deliver-info__text Отгрузка товара на доставку в транспортную компаниюпроизводится в течение 24 часов после поступления оплаты от клиента. Срок доставки транспортной компанией в Ваш регион может отличаться, уточняйте у менеджера срок доставки при каждом отдельном заказе.Наличие стабильного склада позволяет нам обеспечить своевременную отгрузку. Вы можете не беспокоиться о задержках отгрузки и получении своего заказа вовремя.
+						.deliver-info__el
+							.deliver-info__title География
+							.deliver-info__text Мы доставляем нашу продукцию в любой город России или СНГ. Для того чтобы стать нашим партнером, достаточно заполнить заявку и наш менеджер рассчитает примерные сроки доставки в ваш регион. Заявку на звонок менеджера можно оформить здесь.
+
+					.title#reclamacion рекламация
+					.box.box--extend.text
+						p Если случилась непредвиденная ситуация и товар пришел к вам с дефектом, то вам необходимо прислать полный фото/видео отчет вашему менеджеру с подробным описанием ситуации. Наш отдел контроля качества проверит вашу заявку и урегулирует все вопросы в течение 3 рабочих дней. Заявку можно прислать в свободной форме на почту вашему менеджеру или в личном кабинете на сайте.развитие структ
+
+					.title#aducation обучение
+					.aducation
+						.aducation__el
+							.aducation__title Направления
+							.aducation__text.text
+								p Мы проводим обучения для каждого нашего партнера на бесплатной основе по следующим направлениям.
+								ul
+									li Производственное применение фасадных систем VENETO
+									li Дизайнерские решения и применение фасадных систем VENETO
+									li Методы повышения продаж фасадных систем VENETO
+
+						.aducation__el.aducation__el--mark
+							.aducation__title Cрок
+							.aducation__text.text
+								p Срок обучения может варьироваться от одного дня до трех. За счет индивидуальной программы обучения, срок будет адаптирован под ваш курс. Так же вы можете разбить занятия на несколько блоков, если у вас плотный график и сложно уместить обучение в несколько дней подряд.
+						.aducation__el.aducation__el--mark
+							.aducation__title Формат
+							.aducation__text.text
+								p Формат обучения мы можем полностью адаптировать под ваши потребности. Мы можем провести обучение:
+								ul
+									li В наших офисах
+									li На территории вашего салона
+									li На вашем производстве
+								p Мы стремимся сделать обучение наших партнеров максимально комфортным. Поэтому готовы учесть любые ваши пожелания по формату и времени обучения.
+					.get-call
+						.btn--md.btn--mark записаться
+
+					.title#catalog Каталоги
+					.instr.instr--light
+						- for (var i=0;i<4;i++)
+							a(href="#").instr__el
+								.instr-icon
+									+icon("download","icon")
+								.instr-name Технический каталог
+							a(href="#").instr__el
+								.instr-icon
+									+icon("download","icon")
+								.instr-name Презентация фасадных систем
+		+form()
+
+	+footer()
+include ./block_html/_script.pug

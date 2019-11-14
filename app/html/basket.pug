@@ -1,0 +1,93 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.title Ваша корзина
+			.order
+				.order__col
+					.order__el
+						.order__el-title Организация
+						// toggle class .input-row--error for show error msg
+						.input-row
+							input(type="text" placeholder="Название вашей организации" class="input")
+							.error-msg Введённые данные не должны содержать цифры
+					.order__el
+						.order__el-title Контактное лицо
+						.input-cont.input-cont--two
+							.input-row
+								input(type="text" placeholder="Ваше фамилия" class="input")
+							.input-row
+								input(type="text" placeholder="Ваше имя" class="input")
+							.input-row
+								input(type="text" placeholder="Ваше отчество" class="input")
+							.input-row
+								input(type="text" placeholder="Ваш телефон" class="input")
+							.input-row
+								input(type="text" placeholder="Ваша почта" class="input")
+					.order__el
+						.order__el-title Адрес
+						.input-cont.input-cont--two
+							.input-row
+								input(type="text" placeholder="Ваше город" class="input")
+							.input-row
+								input(type="text" placeholder="Ваша улица" class="input")
+							.input-row
+								input(type="text" placeholder="Ваш дом" class="input")
+							.input-row
+								input(type="text" placeholder="Квартира, офис" class="input")
+				.order__col
+					.order__el
+						.order__el-title банковские реквизиты
+						.input-cont.input-cont--two
+							.input-row
+								input(type="text" placeholder="ИНН" class="input")
+							.input-row
+								input(type="text" placeholder="ОГРН" class="input")
+							.input-row
+								input(type="text" placeholder="КПП" class="input")
+					.order__el
+						.order__el-title Ваш менеджер
+						.manager
+							.manager__ico(style="background-image:url('img/user.jpg')")
+							.manager__info
+								.manager__name Иванов Иван Иванович
+								a(href="mailto:example@gmail.com").manager__mail example@gmail.com
+			.title Состав заказа
+			.basket
+				.basket-empty
+					.basket-empty__title Ваша корзина пуста.
+					.basket-empty__text Добавь интересующие товары из меню сайта
+				- for (var i=0;i<4;i++)
+					.basket__el
+						.basket__el-info
+							a(href="#" style="background-image:url('img/furniture-6.png')").basket__img
+							a(href="#").basket__name
+								.basket__name-text Гварнери  #{i + 1}
+						.basket__el-change
+							.basket__price 120 р.
+							.basket__size 60х40
+							.basket__inc
+								+incr()
+							.basket__delete
+								+icon("trash","icon")
+				//basket-footer
+				.basket-footer
+
+					.basket-total-text Итого:
+					.basket-total
+						.basket-total-true 38 300 р.
+					.basket-get
+						//a(href="#").btn--md.btn--light.basket-clear.js-basket-clear Очистить
+						a(href="#").btn--md.btn--mark
+							.btn--icon
+								span Продолжить
+								+icon("arrow-coner-right","nav-icon nav-icon--left")
+			+form()
+
+	+footer()
+include ./block_html/_script.pug

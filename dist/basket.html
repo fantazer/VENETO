@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<!--create by ANATOLY KUZNETSOV-->
+<!--contact mail:kuznecovs45@gmail.com skype:an_kuznetcov-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--colors-tabs-->
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <!--SEO-->
+    <title>Document</title>
+    <meta name="description" itemprop="description" content="" />
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-edit.css" />
+</head>
+
+<body>
+    <!--block footer end-->
+    <div class="page">
+        <!--block header-->
+        <div class="header">
+            <div class="main-cont">
+                <div class="head">
+                    <div class="head-toggle">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <a class="logo" href="/">
+                        <img src="img/logo.svg" alt="" />
+                    </a>
+                    <a class="head__phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                    <div class="head-tool">
+                        <a class="head-login" href="#">Личный кабинет</a>
+                        <a class="cart" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#shopping-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slide-menu">
+                        <div class="slide-menu__list">
+                            <a class="slide-menu__list-el" href="#">Каталог</a>
+                            <a class="slide-menu__list-el" href="#">Сервис</a>
+                            <a class="slide-menu__list-el" href="#">О компании</a>
+                            <a class="slide-menu__list-el" href="#">Контакты</a>
+                            <a class="slide-menu__list-el" href="#">Личный кабинет</a>
+                        </div>
+                        <a class="header-top-phone" href="tel:8 800 000 00 00">
+                            <div class="header-top-phone__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="header-top-phone__val">8 800 000 00 00</div>
+                        </a>
+                        <form class="search" action="#">
+                            <input class="input" type="text" placeholder="Что ищем" />
+                            <input class="btn--md btn--mark" type="submit" value="Искать" />
+                        </form>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-list">
+                        <a class="nav-el" href="#">Каталог</a>
+                        <a class="nav-el" href="#">Сервис</a>
+                        <a class="nav-el" href="#">О компании</a>
+                        <a class="nav-el" href="#">Контакты</a>
+                    </div>
+                    <form class="search" action="#">
+                        <input class="input" type="text" placeholder="Что ищем" />
+                        <input class="btn--md btn--mark" type="submit" value="Искать" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--block header end-->
+        <div class="content">
+            <div class="main-cont">
+                <div class="bread-row">
+                    <div class="bread">
+                        <a class="bread__el" href="#">Главная</a>
+                        <div class="bread__el">Страница</div>
+                    </div>
+                </div>
+                <div class="title">Ваша корзина</div>
+                <div class="order">
+                    <div class="order__col">
+                        <div class="order__el">
+                            <div class="order__el-title">Организация</div>
+                            <!-- toggle class .input-row--error for show error msg-->
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Название вашей организации" />
+                                <div class="error-msg">Введённые данные не должны содержать цифры</div>
+                            </div>
+                        </div>
+                        <div class="order__el">
+                            <div class="order__el-title">Контактное лицо</div>
+                            <div class="input-cont input-cont--two">
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваше фамилия" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваше имя" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваше отчество" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваш телефон" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваша почта" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__el">
+                            <div class="order__el-title">Адрес</div>
+                            <div class="input-cont input-cont--two">
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваше город" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваша улица" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваш дом" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Квартира, офис" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__col">
+                        <div class="order__el">
+                            <div class="order__el-title">банковские реквизиты</div>
+                            <div class="input-cont input-cont--two">
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="ИНН" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="ОГРН" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="КПП" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__el">
+                            <div class="order__el-title">Ваш менеджер</div>
+                            <div class="manager">
+                                <div class="manager__ico" style="background-image:url('img/user.jpg')"></div>
+                                <div class="manager__info">
+                                    <div class="manager__name">Иванов Иван Иванович</div>
+                                    <a class="manager__mail" href="mailto:example@gmail.com">example@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">Состав заказа</div>
+                <div class="basket">
+                    <div class="basket-empty">
+                        <div class="basket-empty__title">Ваша корзина пуста.</div>
+                        <div class="basket-empty__text">Добавь интересующие товары из меню сайта</div>
+                    </div>
+                    <div class="basket__el">
+                        <div class="basket__el-info">
+                            <a class="basket__img" href="#" style="background-image:url('img/furniture-6.png')"></a>
+                            <a class="basket__name" href="#">
+                                <div class="basket__name-text">Гварнери 1</div>
+                            </a>
+                        </div>
+                        <div class="basket__el-change">
+                            <div class="basket__price">120 р.</div>
+                            <div class="basket__size">60х40</div>
+                            <div class="basket__inc">
+                                <div class="elements-icr-block">
+                                    <div class="incr">
+                                        <div class="incr__minus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="incr__val">
+                                            <span>1</span>
+                                            <div class="incr__val-coner"></div>
+                                        </div>
+                                        <div class="incr__plus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__delete">
+                                <svg class="icon">
+                                    <use xlink:href="#trash"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__el">
+                        <div class="basket__el-info">
+                            <a class="basket__img" href="#" style="background-image:url('img/furniture-6.png')"></a>
+                            <a class="basket__name" href="#">
+                                <div class="basket__name-text">Гварнери 2</div>
+                            </a>
+                        </div>
+                        <div class="basket__el-change">
+                            <div class="basket__price">120 р.</div>
+                            <div class="basket__size">60х40</div>
+                            <div class="basket__inc">
+                                <div class="elements-icr-block">
+                                    <div class="incr">
+                                        <div class="incr__minus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="incr__val">
+                                            <span>1</span>
+                                            <div class="incr__val-coner"></div>
+                                        </div>
+                                        <div class="incr__plus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__delete">
+                                <svg class="icon">
+                                    <use xlink:href="#trash"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__el">
+                        <div class="basket__el-info">
+                            <a class="basket__img" href="#" style="background-image:url('img/furniture-6.png')"></a>
+                            <a class="basket__name" href="#">
+                                <div class="basket__name-text">Гварнери 3</div>
+                            </a>
+                        </div>
+                        <div class="basket__el-change">
+                            <div class="basket__price">120 р.</div>
+                            <div class="basket__size">60х40</div>
+                            <div class="basket__inc">
+                                <div class="elements-icr-block">
+                                    <div class="incr">
+                                        <div class="incr__minus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="incr__val">
+                                            <span>1</span>
+                                            <div class="incr__val-coner"></div>
+                                        </div>
+                                        <div class="incr__plus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__delete">
+                                <svg class="icon">
+                                    <use xlink:href="#trash"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__el">
+                        <div class="basket__el-info">
+                            <a class="basket__img" href="#" style="background-image:url('img/furniture-6.png')"></a>
+                            <a class="basket__name" href="#">
+                                <div class="basket__name-text">Гварнери 4</div>
+                            </a>
+                        </div>
+                        <div class="basket__el-change">
+                            <div class="basket__price">120 р.</div>
+                            <div class="basket__size">60х40</div>
+                            <div class="basket__inc">
+                                <div class="elements-icr-block">
+                                    <div class="incr">
+                                        <div class="incr__minus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="incr__val">
+                                            <span>1</span>
+                                            <div class="incr__val-coner"></div>
+                                        </div>
+                                        <div class="incr__plus incr__nav">
+                                            <svg class="icon">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__delete">
+                                <svg class="icon">
+                                    <use xlink:href="#trash"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!--basket-footer-->
+                    <div class="basket-footer">
+                        <div class="basket-total-text">Итого:</div>
+                        <div class="basket-total">
+                            <div class="basket-total-true">38 300 р.</div>
+                        </div>
+                        <div class="basket-get">
+                            <!--a(href="#").btn--md.btn--light.basket-clear.js-basket-clear Очистить-->
+                            <a class="btn--md btn--mark" href="#">
+                                <div class="btn--icon">
+                                    <span>Продолжить</span>
+                                    <svg class="nav-icon nav-icon--left">
+                                        <use xlink:href="#arrow-coner-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title section-title--extend">Остались вопросы?</div>
+                    <div class="form">
+                        <div class="form-info">
+                            <form action="#">
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваше имя" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваш телефон" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="input" type="text" placeholder="Ваш email" />
+                                </div>
+                                <div class="input-row">
+                                    <input class="btn--md btn--mark btn--full" type="submit" value="Заказать звонок" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-img" style="background-image:url('img/item-4.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block footer-->
+        <div class="soc-row">
+            <a class="soc-row__el" href="#">
+                <img src="img/facebook--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/vk--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/instagram--color.svg" alt="" />
+            </a>
+        </div>
+        <div class="footer">
+            <div class="main-cont">
+                <div class="footer-head">
+                    <a class="footer-logo" href="/">
+                        <img src="img/logo-light.svg" alt="" />
+                    </a>
+                    <a class="footer-phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Каталог</div>
+                        <div class="footer-nav__el">Фасады</div>
+                        <div class="footer-nav__el">Ручки</div>
+                        <div class="footer-nav__el">Вытяжки</div>
+                        <div class="footer-nav__el">Сопутствующие товары</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Сервис</div>
+                        <div class="footer-nav__el">Материалы</div>
+                        <div class="footer-nav__el">Производство</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">О компании</div>
+                        <div class="footer-nav__el">Дизайнеры</div>
+                        <div class="footer-nav__el">Новости</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Контакты</div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Адрес:</div>
+                            <div class="footer-contact-val">МО, г. Щёлково, ул. Хотовская, д. 34, корп. 2</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Тел.:</div>
+                            <div class="footer-contact-val">+7 (495) 651-86-75</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">E-mail:</div>
+                            <div class="footer-contact-val">info@veneto.pro</div>
+                        </div>
+                        <a class="footer-loc" href="/">Как добраться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/combined.js"></script>
+    <script src="js/add-on.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-edit.js"></script>
+</body>
+
+</html>

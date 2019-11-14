@@ -713,7 +713,7 @@ select.select-beauty
 	+below(768px)
 		margin: 30px 0
 	flex(mid)
-	margin: 100px 0 50px 0
+	margin: 50px 0
 
 .quality
 	+below(1024px)
@@ -1157,13 +1157,13 @@ select.select-beauty
 	&:active
 		background-color black
 .incr__minus
-	background: #f5f8fa
+	background: $mark
 	.icon
-		fill black
+		fill white
 .incr__plus
-	background: #f5f8fa
+	background: $mark
 	.icon
-		fill black
+		fill white
 .incr__val
 	flex(mid)
 	background white
@@ -1191,8 +1191,10 @@ table th, table td
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(2, 1fr)
+
 .instr__el
 	f()
+	background: white
 	align-items center
 	padding: 15px
 	border 1px solid $border-color
@@ -1214,6 +1216,9 @@ table th, table td
 	up()
 	margin-top: 0
 	margin-bottom: 30px
+
+
+
 
 .information-item
 	+below(640px)
@@ -1354,3 +1359,440 @@ table th, table td
 .header-top-phone__val
 	font-size: 18px
 	color white
+
+// basket
+.basket
+	padding: 30px 0
+.basket-empty
+	+below(768px)
+		margin-top: 40px
+	display: none
+.basket-empty__title
+	text-align: center
+	@extend .type--xl
+	margin-bottom: 10px
+.basket-empty__text
+	text-align: center
+
+.basket__el
+	+below(768px)
+		fw()
+		flex(mid)
+		fl()
+		position: relative
+	display flex
+	flex(between)
+	padding: 20px
+	outline none!important
+	opacity:1
+	background: white
+	margin-bottom: 10px
+
+.basket__el--hide
+	opacity: 0
+
+
+.basket-container
+	+below(768px)
+		height: auto
+	//height: 252px
+
+.basket__img
+	+below(768px)
+		margin-right: 0
+		margin-bottom: 20px
+		width: 240px
+		padding: 10%
+	bg-full()
+	margin-right: 20px
+	padding: 6% 10%
+	background-size contain
+.basket__ingr
+	/*+below(768px)
+		flex(mid)
+		margin-left:initial
+		margin-bottom: 20px*/
+	f()
+	display: none
+	margin-left: auto
+
+.basket__ingr-el
+	bg-full()
+	margin-right: 20px
+	size 40px
+	background-size: contain
+
+.basket__name
+	+below(768px)
+		width: 100%
+	width calc(100% - 80px)
+.basket__name-text
+	+below(1024px)
+		font-size: 18px
+	+below(768px)
+		font-size: 20px
+		margin-bottom: 20px
+		text-align: center
+	@extend .type--mdx
+	font-weight 600
+	color $mark
+	up()
+	line-height: 1.6
+
+.basket__inc
+	+below(768px)
+		width: 100%
+		flex(mid)
+		margin: 20px 0
+.basket__price
+	+below(1024px)
+		font-size: 24px
+	+below(768px)
+		font-size: 20px
+		margin-right: 10px
+		font-size: 24px
+	@extend .type--mdx
+	color $mark
+	font-weight 700
+.basket__size
+	+below(768px)
+		margin: 0
+	@extend .type--md
+	margin: 0 30px 0 10px
+.basket__delete
+	+below(768px)
+		position: absolute
+		top 20px
+		right: 20px
+	.icon
+		cp()
+		tr(all)
+		size 25px
+		fill $mark
+		opacity 0.3
+		&:hover
+			opacity: 1
+
+.basket__el-info
+	+below(768px)
+		width: 100%
+		flex(mid)
+		fl()
+		fw()
+	f()
+	align-items: center
+	width: 55%
+
+
+.basket__el-change
+	+below(1024px)
+		width: 45%
+	+below(768px)
+		flex(mid)
+		fw()
+		width: 100%
+	flex(between)
+	width: 40%
+
+.basket-footer
+	+below(768px)
+		flex(mid)
+		fl()
+	f()
+	align-items: center
+	margin-top: 30px
+
+.basket-total-text
+	+below(768px)
+		margin 20px 0
+	font-size: 15px
+	margin-right: 20px
+	margin-left auto
+.basket-total
+	+below(768px)
+		margin-right: 0
+		text-align: center
+		margin-bottom: 20px
+	margin-right: 60px
+
+
+.basket-total-true
+	@extend .type--xl
+	font-weight 900
+	color $mark
+
+.basket-title
+	@extend .type--md
+	font-weight 700
+	text-transform uppercase
+	color $mark
+// basket === end
+
+//form
+.input-row
+	//margin-bottom: 20px
+	.input
+		width: 100%
+.input-row__title
+	margin-bottom: 10px
+
+.input-row--error
+	.input
+		border-color red
+		color red
+	.error-msg
+		display block
+.error-msg
+	color red
+	margin: 10px 0
+	display none
+.input-cont
+	display: grid
+	grid-gap 20px
+.input-cont--two
+	grid-template-columns: 1fr 1fr
+	+below(640px)
+		grid-template-columns: 1fr
+
+.order
+	+below(640px)
+		fw()
+		margin-bottom: 40px
+	f()
+	justify-content space-between
+	margin-bottom: 100px
+.order__col
+	+below(640px)
+		width: 100%
+	width: 45%
+	.input
+		margin-bottom: 0
+.order__el
+	margin-bottom: 30px
+.order__el-title
+	@extend .type--md
+	font-weight 700
+	text-transform uppercase
+	color $mark
+	margin-bottom: 20px
+
+.manager
+	padding: 20px
+	background: white
+	f()
+	align-items center
+.manager__ico
+	size 80px
+	flex(mid)
+	round()
+	bg-full()
+	border 1px solid $border-color
+	margin-right: 20px
+.manager__name
+	font-weight: 700
+	@extend .type--md
+	margin-bottom: 5px
+	color $mark
+
+.about-el
+	margin-bottom: 40px
+
+.about-el--info
+	background: white
+	padding: 30px
+
+.plus
+	+below(640px)
+		display block
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	grid-column-gap: 20px
+	grid-row-gap: 20px
+
+.plus__el
+	+below(640px)
+		margin-bottom: 20px
+		padding: 20px
+	width: 100%
+	padding: 20px 30px 40px 30px
+	background: white
+	&:nth-child(1)
+		grid-area: 1 / 1 / 3 / 2
+	&:nth-child(2)
+		grid-area: 1 / 2 / 2 / 3
+		background: #4f6887
+	&:nth-child(3)
+		grid-area: 2 / 2 / 3 / 3
+.plus__el--dark
+	color white
+	.plus__el-title
+		color white
+	background: $mark
+.plus__el-head
+	f()
+	align-items center
+	margin-bottom: 10px
+.plus__el-icon
+	size 80px
+	margin-right: 20px
+.plus__el-title
+	@extend .type--md
+	font-weight 300
+	text-transform uppercase
+	line-height: 1.6
+.plus__el-info
+	line-height: 1.6
+	p
+		font-size: 14px
+
+.map
+	position relative
+	padding: 20% 10%
+	margin-bottom: 30px
+.map-el
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	background: #d9e9f3
+
+.diler__el
+	padding: 30px
+	background: white
+	margin-bottom: 20px
+.diler__el-title
+	@extend .type--lg
+	font-weight: 300
+	margin-bottom: 10px
+
+.diler__el-text
+	line-height: 1.6
+
+.provider__el
+	+below(480px)
+		fw()
+	f()
+	margin-bottom: 30px
+	align-items flex-start
+	&:nth-child(even)
+		.provider__el-info
+			background: #4f6887
+.provider__el-img-wrap
+	+below(480px)
+		width: 100%
+		margin-bottom: 20px
+		transform translateY(0)
+	width: 30%
+	padding: 30px
+	background: white
+	transform translateY(40px)
+	box-shadow 1px 8px 12px rgba(0, 0, 0, 0.04)
+.provider__el-img
+	bg-full()
+	padding: 20% 10%
+
+.provider__el-info
+	+below(480px)
+		width: 100%
+		margin-left: 0
+		padding: 20px
+	width calc(70% + 140px)
+	color white
+	background: $mark
+	padding: 40px 20px 40px 140px
+	margin-left: -120px
+
+.deliver-step
+	+below(640px)
+		fw()
+	f()
+	margin-bottom: 40px
+.deliver-step__el
+	+below(640px)
+		width: 100%
+	width: 33%
+	background: $mark
+	padding: 20px
+	f()
+	align-items center
+.deliver-step__el
+	&:nth-child(1)
+		background: #a1c1d6
+	&:nth-child(2)
+		background: #8aaec6
+	&:nth-child(3)
+		background: $mark
+.deliver-step__icon
+	size 80px
+	margin-right: 20px
+
+.deliver-step__info
+	color white
+.deliver-step__title
+	font-weight: 700
+	margin-bottom: 5px
+
+.deliver-info
+	+below(640px)
+		display block
+	display: grid
+	grid-gap 20px
+	grid-template-columns: 1fr 1fr
+	margin-bottom: 20px
+
+.deliver-info-wrap
+	margin-bottom: 60px
+
+.deliver-info__el
+	background: white
+	padding: 30px
+.deliver-info__el--mark
+		background: $mark
+		color white
+.deliver-info__title
+	font-weight: 300
+	margin-bottom: 10px
+	up()
+	@extend .type--lg
+.deliver-info__text
+	line-height: 1.4
+	font-size: 14px
+
+.aducation
+	+below(640px)
+		display block
+	display: grid
+	grid-gap 20px
+	grid-template-columns: 1fr 1fr
+	grid-auto-rows: minmax(min-content, max-content);
+
+
+.aducation__el
+	+below(640px)
+		margin-bottom: 20px
+	&:nth-child(1)
+		grid-area: 1 / 1 / 2 / 2
+	&:nth-child(2)
+		grid-area: 1 / 2 / 2 / 3
+	&:nth-child(3)
+		grid-area: 2 / 1 / 3 / 3
+	background: white
+	padding: 30px
+.aducation__el--mark
+		background: $mark
+		color white
+.aducation__title
+	font-weight: 300
+	margin-bottom: 10px
+	up()
+	@extend .type--lg
+.aducation__text
+	line-height: 1.4
+	font-size: 14px
+
+.box
+	background: white
+	padding: 30px
+	margin-bottom: 60px

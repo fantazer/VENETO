@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<!--create by ANATOLY KUZNETSOV-->
+<!--contact mail:kuznecovs45@gmail.com skype:an_kuznetcov-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--colors-tabs-->
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <!--SEO-->
+    <title>Document</title>
+    <meta name="description" itemprop="description" content="" />
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-edit.css" />
+</head>
+
+<body>
+    <!--block footer end-->
+    <div class="page">
+        <!--block header-->
+        <div class="header">
+            <div class="main-cont">
+                <div class="head">
+                    <div class="head-toggle">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <a class="logo" href="/">
+                        <img src="img/logo.svg" alt="" />
+                    </a>
+                    <a class="head__phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                    <div class="head-tool">
+                        <a class="head-login" href="#">Личный кабинет</a>
+                        <a class="cart" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#shopping-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slide-menu">
+                        <div class="slide-menu__list">
+                            <a class="slide-menu__list-el" href="#">Каталог</a>
+                            <a class="slide-menu__list-el" href="#">Сервис</a>
+                            <a class="slide-menu__list-el" href="#">О компании</a>
+                            <a class="slide-menu__list-el" href="#">Контакты</a>
+                            <a class="slide-menu__list-el" href="#">Личный кабинет</a>
+                        </div>
+                        <a class="header-top-phone" href="tel:8 800 000 00 00">
+                            <div class="header-top-phone__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="header-top-phone__val">8 800 000 00 00</div>
+                        </a>
+                        <form class="search" action="#">
+                            <input class="input" type="text" placeholder="Что ищем" />
+                            <input class="btn--md btn--mark" type="submit" value="Искать" />
+                        </form>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-list">
+                        <a class="nav-el" href="#">Каталог</a>
+                        <a class="nav-el" href="#">Сервис</a>
+                        <a class="nav-el" href="#">О компании</a>
+                        <a class="nav-el" href="#">Контакты</a>
+                    </div>
+                    <form class="search" action="#">
+                        <input class="input" type="text" placeholder="Что ищем" />
+                        <input class="btn--md btn--mark" type="submit" value="Искать" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--block header end-->
+        <div class="content">
+            <div class="main-cont">
+                <div class="bread-row">
+                    <div class="bread">
+                        <a class="bread__el" href="#">Главная</a>
+                        <div class="bread__el">Страница</div>
+                    </div>
+                </div>
+                <div class="layer">
+                    <div class="toolbar toolbar--mobile">
+                        <div class="toolbar-item toolbar-item--stick">
+                            <div class="toolbar-head">Доставка</div>
+                            <a class="toolbar-el toolbar-el--active" href="#deliver" rel="m_PageScroll2id">Veneto</a>
+                            <a class="toolbar-el" href="#reclamacion" rel="m_PageScroll2id">Рекламация</a>
+                            <a class="toolbar-el" href="#aducation" rel="m_PageScroll2id">Обучение</a>
+                            <a class="toolbar-el" href="#catalog" rel="m_PageScroll2id">Каталоги</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">Доставка</div>
+                        <div class="deliver-step" id="deliver">
+                            <div class="deliver-step__el">
+                                <div class="deliver-step__icon">
+                                    <img src="img/doc.svg" alt="" />
+                                </div>
+                                <div class="deliver-step__info">
+                                    <div class="deliver-step__title">Шаг 1</div>
+                                    <div class="deliver-step__text">Заполните заявку</div>
+                                </div>
+                            </div>
+                            <div class="deliver-step__el">
+                                <div class="deliver-step__icon">
+                                    <img src="img/send.svg" alt="" />
+                                </div>
+                                <div class="deliver-step__info">
+                                    <div class="deliver-step__title">Шаг 2</div>
+                                    <div class="deliver-step__text">Отправьте менеджеру</div>
+                                </div>
+                            </div>
+                            <div class="deliver-step__el">
+                                <div class="deliver-step__icon">
+                                    <img src="img/deliver-white.svg" alt="" />
+                                </div>
+                                <div class="deliver-step__info">
+                                    <div class="deliver-step__title">Шаг 3</div>
+                                    <div class="deliver-step__text">Ожидайте доставку</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deliver-info-wrap">
+                            <div class="deliver-info">
+                                <div class="deliver-info__el">
+                                    <div class="deliver-info__title">Условия</div>
+                                    <div class="deliver-info__text">Поддержание стабильной складской программы требует затрат ресурсов. Мы гарантируем комфортные условия доставки только при наличии полной предоплаты. Наши специалисты проработали все процессы отгрузки клиентов, что позволяет
+                                        нам обеспечить вам качественную упаковку и своевременную доставку.</div>
+                                </div>
+                                <div class="deliver-info__el deliver-info__el--mark">
+                                    <div class="deliver-info__title">Сроки</div>
+                                    <div class="deliver-info__text">Отгрузка товара на доставку в транспортную компаниюпроизводится в течение 24 часов после поступления оплаты от клиента. Срок доставки транспортной компанией в Ваш регион может отличаться, уточняйте у менеджера срок
+                                        доставки при каждом отдельном заказе.Наличие стабильного склада позволяет нам обеспечить своевременную отгрузку. Вы можете не беспокоиться о задержках отгрузки и получении своего заказа вовремя.</div>
+                                </div>
+                            </div>
+                            <div class="deliver-info__el">
+                                <div class="deliver-info__title">География</div>
+                                <div class="deliver-info__text">Мы доставляем нашу продукцию в любой город России или СНГ. Для того чтобы стать нашим партнером, достаточно заполнить заявку и наш менеджер рассчитает примерные сроки доставки в ваш регион. Заявку на звонок менеджера можно
+                                    оформить здесь.</div>
+                            </div>
+                        </div>
+                        <div class="title" id="reclamacion">рекламация</div>
+                        <div class="box box--extend text">
+                            <p>Если случилась непредвиденная ситуация и товар пришел к вам с дефектом, то вам необходимо прислать полный фото/видео отчет вашему менеджеру с подробным описанием ситуации. Наш отдел контроля качества проверит вашу заявку и
+                                урегулирует все вопросы в течение 3 рабочих дней. Заявку можно прислать в свободной форме на почту вашему менеджеру или в личном кабинете на сайте.развитие структ</p>
+                        </div>
+                        <div class="title" id="aducation">обучение</div>
+                        <div class="aducation">
+                            <div class="aducation__el">
+                                <div class="aducation__title">Направления</div>
+                                <div class="aducation__text text">
+                                    <p>Мы проводим обучения для каждого нашего партнера на бесплатной основе по следующим направлениям.</p>
+                                    <ul>
+                                        <li>Производственное применение фасадных систем VENETO</li>
+                                        <li>Дизайнерские решения и применение фасадных систем VENETO</li>
+                                        <li>Методы повышения продаж фасадных систем VENETO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="aducation__el aducation__el--mark">
+                                <div class="aducation__title">Cрок</div>
+                                <div class="aducation__text text">
+                                    <p>Срок обучения может варьироваться от одного дня до трех. За счет индивидуальной программы обучения, срок будет адаптирован под ваш курс. Так же вы можете разбить занятия на несколько блоков, если у вас плотный график
+                                        и сложно уместить обучение в несколько дней подряд.</p>
+                                </div>
+                            </div>
+                            <div class="aducation__el aducation__el--mark">
+                                <div class="aducation__title">Формат</div>
+                                <div class="aducation__text text">
+                                    <p>Формат обучения мы можем полностью адаптировать под ваши потребности. Мы можем провести обучение:</p>
+                                    <ul>
+                                        <li>В наших офисах</li>
+                                        <li>На территории вашего салона</li>
+                                        <li>На вашем производстве</li>
+                                    </ul>
+                                    <p>Мы стремимся сделать обучение наших партнеров максимально комфортным. Поэтому готовы учесть любые ваши пожелания по формату и времени обучения.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="get-call">
+                            <div class="btn--md btn--mark">записаться</div>
+                        </div>
+                        <div class="title" id="catalog">Каталоги</div>
+                        <div class="instr instr--light">
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Технический каталог</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Презентация фасадных систем</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Технический каталог</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Презентация фасадных систем</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Технический каталог</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Презентация фасадных систем</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Технический каталог</div>
+                            </a>
+                            <a class="instr__el" href="#">
+                                <div class="instr-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                </div>
+                                <div class="instr-name">Презентация фасадных систем</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title section-title--extend">Остались вопросы?</div>
+                <div class="form">
+                    <div class="form-info">
+                        <form action="#">
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Ваше имя" />
+                            </div>
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Ваш телефон" />
+                            </div>
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Ваш email" />
+                            </div>
+                            <div class="input-row">
+                                <input class="btn--md btn--mark btn--full" type="submit" value="Заказать звонок" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-img" style="background-image:url('img/item-4.jpg')"></div>
+                </div>
+            </div>
+        </div>
+        <!--block footer-->
+        <div class="soc-row">
+            <a class="soc-row__el" href="#">
+                <img src="img/facebook--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/vk--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/instagram--color.svg" alt="" />
+            </a>
+        </div>
+        <div class="footer">
+            <div class="main-cont">
+                <div class="footer-head">
+                    <a class="footer-logo" href="/">
+                        <img src="img/logo-light.svg" alt="" />
+                    </a>
+                    <a class="footer-phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Каталог</div>
+                        <div class="footer-nav__el">Фасады</div>
+                        <div class="footer-nav__el">Ручки</div>
+                        <div class="footer-nav__el">Вытяжки</div>
+                        <div class="footer-nav__el">Сопутствующие товары</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Сервис</div>
+                        <div class="footer-nav__el">Материалы</div>
+                        <div class="footer-nav__el">Производство</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">О компании</div>
+                        <div class="footer-nav__el">Дизайнеры</div>
+                        <div class="footer-nav__el">Новости</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Контакты</div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Адрес:</div>
+                            <div class="footer-contact-val">МО, г. Щёлково, ул. Хотовская, д. 34, корп. 2</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Тел.:</div>
+                            <div class="footer-contact-val">+7 (495) 651-86-75</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">E-mail:</div>
+                            <div class="footer-contact-val">info@veneto.pro</div>
+                        </div>
+                        <a class="footer-loc" href="/">Как добраться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--build:js js/combined.js-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/slick-carousel/slick/slick.js"></script>
+    <script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+    <script src="bower/sticky-kit/jquery.sticky-kit.js"></script>
+    <script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+    <!-- endbuild-->
+    <script src="js/add-on.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-edit.js"></script>
+</body>
+
+</html>

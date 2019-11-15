@@ -3744,6 +3744,7 @@ table td {
   background-repeat: no-repeat;
   background-position: center center;
   padding: 20% 10%;
+  background-size: contain;
 }
 .provider__el-info {
   width: -webkit-calc(70% + 140px);

@@ -2281,6 +2281,7 @@ select.select-beauty {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 @media only screen and (max-width: 640px) {
   .advant-el {
@@ -2561,20 +2562,20 @@ select.select-beauty {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 20% 10%;
-  width: 25%;
+  background-size: contain;
+  padding: 15% 10%;
+  width: 30%;
 }
 @media only screen and (max-width: 480px) {
   .goods-img {
     width: 100%;
     margin-bottom: 20px;
     padding: 55% 10%;
-    background-size: contain;
   }
 }
 .goods-info {
-  width: -webkit-calc(75% - 30px);
-  width: calc(75% - 30px);
+  width: -webkit-calc(70% - 30px);
+  width: calc(70% - 30px);
 }
 @media only screen and (max-width: 480px) {
   .goods-info {

@@ -1,0 +1,67 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item
+						.toolbar-head Личный кабинет
+						-
+							var items = [
+							'Заказы',
+							'Рекламации',
+							'Акции',
+							'Регламенты',
+							'Реквизиты',
+							'Фотобанк',
+							'Настройки'
+							];
+						each item,i in items
+							a(href="#" class=i === 2 ? 'toolbar-el--active' : '').toolbar-el #{item}
+					.toolbar-item
+						.toolbar-head Ваш менеджер
+						.toolbar-manager
+							.toolbar-manager__el
+								.toolbar-manager__name <b>Иванов Иван Иванович</b>
+							.toolbar-manager__el <b>Тел:</b> 8 800 000 00 00
+							.toolbar-manager__el <b>Почта:</b> ivanov@gmail.com
+				.info
+					.title Настройки
+					.lk-settings
+						form(action="#")
+							.input-cont
+								.input-row.input-row--error
+									.input-row__title Ваше имя
+									input(type="text" placeholder="Ваше имя" class="input")
+									.error-msg Введённые данные не должны содержать цифры
+							.input-cont
+								.input-row
+									.input-row__title Ваш телефон
+									input(type="text" placeholder="Ваш телефон" class="input")
+							.input-cont
+								.input-row
+									.input-row__title Ваш Email
+									input(type="text" placeholder="Ваш Email" class="input")
+							.input-cont
+								.input-row
+									.input-row__title Пароль
+									input(type="password" placeholder="Ваш пароль" class="input")
+							.input-cont
+								.input-row
+									.input-row__title Новый пароль
+									input(type="password" placeholder="Ваш новый пароль" class="input")
+							.input-cont
+								.input-row
+									.input-row__title Повторите новый пароль
+									input(type="password" placeholder="Повторите Ваш пароль" class="input")
+
+							input(type="submit" value="Сохранить" class="btn--md btn--mark")
+
+
+	+footer()
+include ./block_html/_script.pug

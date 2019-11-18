@@ -321,5 +321,10 @@ $(document).ready(function () {
 	});
 	// scroll to id === end
 
-
+	// toggle lk-history
+	$('.history__el-head').click(function(){
+		$(this).toggleClass("history__el-head--active");
+		$(this).closest(".history__el").find(".history__el-cont").slideToggle();
+	});
+	// toggle lk-history === end
 });

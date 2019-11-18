@@ -1,0 +1,48 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item
+						.toolbar-head Личный кабинет
+						-
+							var items = [
+								'Заказы',
+								'Рекламации',
+								'Акции',
+								'Регламенты',
+								'Реквизиты',
+								'Фотобанк',
+								'Настройки'
+								];
+						each item,i in items
+							a(href="#" class=i===2?'toolbar-el--active':'').toolbar-el #{item}
+					.toolbar-item
+						.toolbar-head Ваш менеджер
+						.toolbar-manager
+							.toolbar-manager__el
+								.toolbar-manager__name <b>Иванов Иван Иванович</b>
+							.toolbar-manager__el <b>Тел:</b> 8 800 000 00 00
+							.toolbar-manager__el <b>Почта:</b> ivanov@gmail.com
+				.info
+					.title прайсы
+					.instr
+						- for (var i=0;i<3;i++)
+							a(href="#").instr__el
+								.instr-icon
+									+icon("pdf","icon")
+								.instr-name Инстукция по уходу
+
+							a(href="#").instr__el
+								.instr-icon
+									+icon("table-file","icon")
+								.instr-name Схема сборки
+
+	+footer()
+include ./block_html/_script.pug

@@ -88,42 +88,38 @@
 	a
 		color $mark
 
-.input-row-half
-	+below(640px)
-		fw()
-		margin-bottom: 0
-	f()
-	justify-content: space-between
-	margin-bottom: 20px
-	.input-wrap
-		+below(640px)
-			width: 100%
-			margin-bottom: 20px
-		width: 48%
 
-.input-row__title
-	margin-bottom: 10px
-	opacity: .6
 
+//form
 .input-row
+	margin-bottom: 20px
 	.input
 		width: 100%
-		margin-bottom: 20px
-	.nice-select
-		width: 100%
+.input-row__title
+	margin-bottom: 10px
 
-.agree-row
-	f()
-	align-items: center
-	margin:10px 0 20px 0
-	a
-		text-decoration: underline
-		display: inline-block
+.input-row--error
+	.input
+		border-color $red
+		color $red
+	.error-msg
+		display block
+.error-msg
+	color $red
+	margin: 10px 0
+	display none
 
-.agree-row__text
-	width: 100%
-	color black
-	font-size: 12px
-	a
-		color #9c9a9a
-		text-decoration: none
+.input-cont
+	display: grid
+	grid-gap 20px
+.input-cont--two
+	grid-template-columns: 1fr 1fr
+	+below(640px)
+		grid-template-columns: 1fr
+.input-cont--three
+	grid-template-columns: 1fr 1fr 1fr
+	+below(640px)
+		grid-template-columns: 1fr
+
+.lk-settings
+	max-width 640px

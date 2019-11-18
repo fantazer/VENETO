@@ -1,0 +1,93 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item
+						.toolbar-head Личный кабинет
+						-
+							var items = [
+							'Заказы',
+							'Рекламации',
+							'Акции',
+							'Регламенты',
+							'Реквизиты',
+							'Фотобанк',
+							'Настройки'
+							];
+						each item,i in items
+							a(href="#" class=i === 2 ? 'toolbar-el--active' : '').toolbar-el #{item}
+					.toolbar-item
+						.toolbar-head Ваш менеджер
+						.toolbar-manager
+							.toolbar-manager__el
+								.toolbar-manager__name <b>Иванов Иван Иванович</b>
+							.toolbar-manager__el <b>Тел:</b> 8 800 000 00 00
+							.toolbar-manager__el <b>Почта:</b> ivanov@gmail.com
+				.info
+					.title Настройки
+					.history
+						- for (var j=0;j<5;j++)
+							.history__el
+								.history__el-head
+									.history__el-info
+										.history__el-icon
+											+icon("arrow-coner-top","icon")
+										.history__el-numb № 414393
+										.history__el-date 15.08.2019
+									.history__el-state
+										.history__el-state-text Статус заказа
+										.history__el-state-val
+											if(j < 4)
+												.history__el-state-icon
+													+icon("clock","icon")
+												.history__el-state-info ждёт вас
+											else
+												.history__el-state-icon
+													+icon("check-round","icon")
+												.history__el-state-info выполнен
+								.history__el-cont
+									.history__el-wrap
+										.history-list
+											- for (var i=0;i<3;i++)
+												.history-list__el
+													.history-list__el-img(style="background-image:url('img/furniture-7.png')")
+													.history-list__el-info
+														a(href="#").history-list__el-title Столешница из дуба
+														.history-list__el-row
+															.history-list__el-cost 350 р
+															.history-list__el-items 2 шт
+															.history-list__el-total 700 р
+											.history-total
+												.history-total-info
+													.history-total-title Итого:
+													.history-total-val 399 р
+														//.price-valute р
+										.history-descr
+											.history-descr-title Информация о заказе
+											.history-descr__row
+												.history-descr__title Способ оплаты
+												.history-descr__val Наличкой при получении
+											.history-descr__row
+												.history-descr__title Доставка
+												.history-descr__val Самовывоз по адресу: ул. Московская, 46/2
+											.history-descr__row
+												.history-descr__title Фамилия и имя
+												.history-descr__val Константинопольский Константин
+											.history-descr__row
+												.history-descr__title Телефон
+												.history-descr__val 8 423 442 23 44
+											.history-descr__row
+												.history-descr__title Электронная почта
+												.history-descr__val diamond@gmail.com
+											a(href="#").btn--md.btn--mark Повторить заказ
+
+					.btn--md.btn--mark.btn--mobile Новый заказ
+	+footer()
+include ./block_html/_script.pug

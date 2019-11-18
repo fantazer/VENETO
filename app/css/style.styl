@@ -949,12 +949,16 @@ select.select-beauty
 	+below(768px)
 		order 1
 		width: 100%
+		margin-top: 40px
 	width: 250px
 .toolbar--mobile
 	+below(768px)
 		display none
 .toolbar-item
 	background: white
+	margin-bottom: 40px
+	&:last-child
+		margin-bottom: 0
 .toolbar-head
 	up()
 	background: $mark
@@ -1189,6 +1193,7 @@ table th, table td
 .instr
 	+below(480px)
 		grid-template-columns: 1fr
+		margin-bottom: 40px
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(2, 1fr)
@@ -1345,6 +1350,19 @@ table th, table td
 	display block
 	text-align center
 	font-weight: 500
+
+.catalog__el
+	cp()
+
+.catalog--photo
+	.catalog__el-img-wrap
+		background: none
+		padding: 0
+		margin-bottom: 0
+	.catalog__el-img
+		padding: 30% 10%
+		background-size cover
+
 
 .header-top-phone__icon
 	border-color white
@@ -1536,6 +1554,8 @@ table th, table td
 		width: 100%
 .input-row__title
 	margin-bottom: 10px
+	font-weight:700
+	color $mark
 
 .input-row--error
 	.input
@@ -1797,3 +1817,185 @@ table th, table td
 	background: white
 	padding: 30px
 	margin-bottom: 60px
+
+.toolbar-manager
+	padding: 20px
+	color $mark
+.toolbar-manager__el
+	margin-bottom: 15px
+	&:last-child
+		margin-bottom: 0
+
+.lk-sale
+	background: white
+	margin-bottom: 10px
+	flex(between)
+	fw()
+	max-width 768px
+.lk-sale__name
+	padding: 20px
+.lk-sale__val
+	+below(480px)
+		padding: 10px 20px
+	padding: 20px
+	@extend .type--md
+	font-weight: 700
+
+//.history
+.history__el
+	margin-bottom: 20px
+.history__el-head
+	+below(640px)
+		fw()
+	f()
+	cp()
+	padding: 20px
+	justify-content space-between
+	border 1px solid $border-color
+	background: white
+	color $mark
+.history__el-head--active
+	background: $mark
+	border 0
+	color white
+	.history__el-state-icon
+		.icon
+			fill white
+	.history__el-icon
+		.icon
+			fill white
+			transform rotate(180deg)
+.history__el-info
+	+below(640px)
+		width: 100%
+		margin-bottom: 10px
+	f()
+	align-items center
+.history__el-icon
+	margin-right: 10px
+	.icon
+		tr()
+		size 16px
+		fill black
+.history__el-numb
+	font-weight:700
+	margin-right: 20px
+.history__el-date
+	color black-light
+.history__el-state
+	+below(640px)
+		width: 100%
+		margin-left: 0
+	f()
+	margin-left auto
+	align-items center
+.history__el-state-text
+	+below(640px)
+		display none
+	@extend .type--xs
+	color black-light
+.history__el-state-val
+	f()
+	align-items center
+.history__el-state-icon
+	.icon
+		+below(640px)
+			margin-left: 0
+		size 20px
+		fill black
+		margin: 0 10px
+.history__el-state-info
+	font-weight: 700
+.history__el-cont
+	padding: 30px 0
+	display none
+.history__el-wrap
+	+below(1024px)
+		fw()
+	f()
+	justify-content space-between
+.history-list
+	+below(1024px)
+		width: 100%
+		margin-bottom: 20px
+	width: 65%
+.history-list__el
+	f()
+	justify-content space-between
+	align-items:center
+	padding-bottom: 15px
+	margin-bottom: 15px
+	border-bottom 1px solid $border-color
+.history-list__el-img
+	+below(480px)
+		size 90px
+	size 130px
+	bg-full()
+	background-size contain
+.history-list__el-info
+	+below(480px)
+		width calc(100% - 100px)
+	width calc(100% - 150px)
+	padding: 10px
+.history-list__el-title
+	+below(480px)
+		font-size: 16px
+	@extend .type--md
+	up()
+	color $mark
+	font-weight 700
+	letter-spacing 0.6px
+	margin-bottom: 10px
+	line-height: 1.6
+	display block
+.history-list__el-row
+	flex(between)
+.history-list__el-cost
+	+below(480px)
+		font-size: 16px
+	@extend .type--md
+.history-list__el-items
+	+below(480px)
+		font-size: 16px
+	@extend .type--md
+.history-list__el-total
+	+below(480px)
+		font-size: 16px
+	@extend .type--md
+	font-weight: 700
+	color $mark
+.history-total
+	f()
+	margin-top: 30px
+.history-total-info
+	+below(480px)
+		width: 100%
+		margin-left: 0
+		flex(mid)
+		fl()
+	bg-full()
+	margin-left auto
+	padding: 20px 40px
+	background: white
+	br(25px)
+	color $mark
+.history-total-title
+	@extend .type--md
+.history-total-val
+	@extend .type--xl
+	font-weight 700
+.history-descr
+	+below(1024px)
+		width: 100%
+	width: 30%
+.history-descr-title
+	font-weight:700
+	margin-bottom: 30px
+.history-descr__row
+	margin-bottom: 20px
+.history-descr__title
+	color #300906
+	line-height: 1.6
+	font-weight: 700
+.history-descr__val
+	line-height: 1.6

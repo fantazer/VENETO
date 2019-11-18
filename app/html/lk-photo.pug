@@ -1,0 +1,71 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.toolbar-item
+						.toolbar-head Личный кабинет
+						-
+							var items = [
+							'Заказы',
+							'Рекламации',
+							'Акции',
+							'Регламенты',
+							'Реквизиты',
+							'Фотобанк',
+							'Настройки'
+							];
+						each item,i in items
+							a(href="#" class=i === 2 ? 'toolbar-el--active' : '').toolbar-el #{item}
+					.toolbar-item
+						.toolbar-head Ваш менеджер
+						.toolbar-manager
+							.toolbar-manager__el
+								.toolbar-manager__name <b>Иванов Иван Иванович</b>
+							.toolbar-manager__el <b>Тел:</b> 8 800 000 00 00
+							.toolbar-manager__el <b>Почта:</b> ivanov@gmail.com
+				.info
+					.title Фотобанк
+					.filter-wrap
+						.filter__el
+							.filter__el-name Вид изделия
+							.filter__el-val
+								select.select-beauty
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+						.filter__el
+							.filter__el-name Материал
+							.filter__el-val
+								select.select-beauty
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+
+
+					.catalog.catalog--photo
+						- for (var i=0;i<6;i++)
+							a(href="img/item-4.jpg" data-fancybox="images").catalog__el.fancybox
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/item-4.jpg')")
+							a(href="img/item-5.jpg" data-fancybox="images").catalog__el.fancybox
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/item-5.jpg')")
+							a(href="img/item-6.jpg" data-fancybox="images").catalog__el.fancybox
+								.catalog__el-img-wrap
+									.catalog__el-img(style="background-image:url('img/item-6.jpg')")
+
+					.pag
+						.pag__el.pag__el--active 1
+						.pag__el 2
+						.pag__el 3
+	+footer()
+include ./block_html/_script.pug

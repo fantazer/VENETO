@@ -467,7 +467,7 @@ gulp.task('build:ftp',function(){
 				'min:css',
 				'min:js',
 				'screenshot',
-				//'img',
+				'img',
 				//'svg',
 				'make',
 				//'zip',

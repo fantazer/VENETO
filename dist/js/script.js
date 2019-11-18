@@ -327,4 +327,19 @@ $(document).ready(function () {
 		$(this).closest(".history__el").find(".history__el-cont").slideToggle();
 	});
 	// toggle lk-history === end
+
+	// toggle lk-history
+	$('.modal-head__el').click(function(){
+		$('.modal-head__el').removeClass("modal-head__el--active");
+		$(this).addClass("modal-head__el--active");
+		var current = $(this).index();
+		$(".modal-info").each(function(){
+			if($(this).index() === current){
+				$(this).removeClass('hidden');
+			}else{
+				$(this).addClass('hidden');
+			}
+		})
+	});
+	// toggle lk-history === end
 });

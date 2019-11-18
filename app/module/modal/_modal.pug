@@ -2,34 +2,67 @@ mixin modal()
 	.modal-layer
 		.modal-filter
 		.modal-wrap
-			.modal(data-modal="order")
+			.modal(data-modal="enter")
 				.modal-content
 					.modal-close
-						+icon("close","icon")
-					.modal-title Оставьте заявку
-					.modal-text Обращаетесь к нам впервые? <br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
-					form.validate-form( action="javascript:void(null);")
-						.input-row
-							input(type="text" name="name" placeholder="Ваше имя").input
-						.input-row
-							input(type="text" name="phone" placeholder="Ваш телефон").input
-						.input-row
-							textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
-						.agree-row
-							.check-el
-								label.style-label.style-label--checkbox
-									input(type="checkbox" name="agree").sytle-input
-									.sytle-input-element
-										+icon("checked","icon-check")
-									.sytle-input-text=text
-							.agree-row__text Согласен с
-								a(href="#") условиями обработки персональных данных
-						input(type="submit" value="Отправить заявку").modal-send
-			//success message
-			.modal(data-modal="truemessage")
-				.modal-content.modal-content--true
-					+icon("interface","icon")
-					.modal-text-true Ваша заявка принята
+						+icon("close-fat","icon")
+					.modal-head
+						.modal-head__el.modal-head__el--active Личный кабинет
+						.modal-head__el Регистрация
+					.modal-info-wrap
+						.modal-info
+							form.validate-form( action="javascript:void(null);")
+									.input-cont
+										// toggle class .input-row--error
+										.input-row
+											.input-row__title Почта
+											input(type="text" placeholder="Ваша почта" class="input")
+											//.error-msg Введённые данные не должны содержать цифры
+									.input-cont
+										.input-row
+											.input-row__title Пароль
+											input(type="password" placeholder="Ваш пароль" class="input")
+									input(type="submit" value="Войти").modal-send
+						.modal-info.hidden
+							form( action="javascript:void(null);")
+								.input-row__title Организация
+								.input-cont
+									.input-row.input-row--error
+										input(type="text" placeholder="Название вашей организации" class="input")
+										.error-msg Введённые данные не должны содержать цифры
+								.input-row__title Контактное лицо
+								.input-cont.input-cont--two
+										.input-row
+											input(type="text" placeholder="ФИО" class="input")
+										.input-row
+											input(type="text" placeholder="Ваш телефон" class="input")
+										.input-row
+											input(type="text" placeholder="Ваша почта" class="input")
+								.input-row__title Адрес
+								.input-cont.input-cont--two
+										.input-row
+											input(type="text" placeholder="Город" class="input")
+										.input-row
+											input(type="text" placeholder="Улица" class="input")
+										.input-row
+											input(type="text" placeholder="Дом" class="input")
+										.input-row
+											input(type="text" placeholder="Квартира, офис" class="input")
+								.input-row__title банковские реквизиты
+								.input-cont.input-cont--two
+										.input-row
+											input(type="text" placeholder="ИНН" class="input")
+										.input-row
+											input(type="text" placeholder="ОГРН" class="input")
+										.input-row
+											input(type="text" placeholder="КПП" class="input")
+								.input-row__title Пароль
+								.input-cont.input-cont--two
+									.input-row
+										input(type="password" placeholder="Ваш пароль" class="input")
+									.input-row
+										input(type="password" placeholder="Повторите пароль" class="input")
+								input(type="submit" value="Зарегистрироваться").modal-send
 
-	a(href="#" data-modal="order").modal-get Открыть модальное окно
+
 

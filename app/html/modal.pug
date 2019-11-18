@@ -14,14 +14,17 @@ style(type='text/css').
 		align-items: baseline;
 	}
 
+.page
+	+header()
+	.content
 
-.main-cont
-	p Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"
-	p Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send
-	.btn-wrap
-		.btn--md.btn--mark.modal-get(data-modal="order") Заявка | data-modal="code "
+		.main-cont
+			p Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"
+			p Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send
+			.btn-wrap
+				.btn--md.btn--mark.modal-get(data-modal="enter") Вход | data-modal="enter"
 
-+footer()
+	+footer()
 +modal()
 
 include ./block_html/_script.pug

@@ -4,12 +4,16 @@ mixin form()
 		.form
 			.form-info
 				form(action="#")
-					.input-row
-						input(type="text" placeholder="Ваше имя" class="input")
-					.input-row
-						input(type="text" placeholder="Ваш телефон" class="input")
-					.input-row
-						input(type="text" placeholder="Ваш email" class="input")
-					.input-row
-						input(type="submit" value="Заказать звонок" class="btn--md btn--mark btn--full")
+					.input-cont
+						.input-row
+							input(type="text" placeholder="Ваше имя" class="input")
+					.input-cont
+						.input-row
+							input(type="text" placeholder="Ваш телефон" class="input")
+					.input-cont
+						.input-row
+							input(type="text" placeholder="Ваш email" class="input")
+					.input-cont
+						.input-row
+							input(type="submit" value="Заказать звонок" class="btn--md btn--mark btn--full")
 			.form-img(style="background-image:url('img/item-4.jpg')")

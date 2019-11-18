@@ -42,66 +42,131 @@
         		align-items: baseline;
         	}
     </style>
-    <div class="main-cont">
-        <p>Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"</p>
-        <p>Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send</p>
-        <div class="btn-wrap">
-            <div class="btn--md btn--mark modal-get" data-modal="order">Заявка | data-modal="code "</div>
-        </div>
-    </div>
-    <!--block footer-->
-    <div class="soc-row">
-        <a class="soc-row__el" href="#">
-            <img src="img/facebook--color.svg" alt="" />
-        </a>
-        <a class="soc-row__el" href="#">
-            <img src="img/vk--color.svg" alt="" />
-        </a>
-        <a class="soc-row__el" href="#">
-            <img src="img/instagram--color.svg" alt="" />
-        </a>
-    </div>
-    <div class="footer">
-        <div class="main-cont">
-            <div class="footer-head">
-                <a class="footer-logo" href="/">
-                    <img src="img/logo-light.svg" alt="" />
-                </a>
-                <a class="footer-phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+    <div class="page">
+        <!--block header-->
+        <div class="header">
+            <div class="main-cont">
+                <div class="head">
+                    <div class="head-toggle">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <a class="logo" href="/">
+                        <img src="img/logo.svg" alt="" />
+                    </a>
+                    <a class="head__phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                    <div class="head-tool">
+                        <a class="head-login" href="#">Личный кабинет</a>
+                        <a class="cart" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#shopping-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slide-menu">
+                        <div class="slide-menu__list">
+                            <a class="slide-menu__list-el" href="#">Каталог</a>
+                            <a class="slide-menu__list-el" href="#">Сервис</a>
+                            <a class="slide-menu__list-el" href="#">О компании</a>
+                            <a class="slide-menu__list-el" href="#">Контакты</a>
+                            <a class="slide-menu__list-el" href="#">Личный кабинет</a>
+                        </div>
+                        <a class="header-top-phone" href="tel:8 800 000 00 00">
+                            <div class="header-top-phone__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="header-top-phone__val">8 800 000 00 00</div>
+                        </a>
+                        <form class="search" action="#">
+                            <input class="input" type="text" placeholder="Что ищем" />
+                            <input class="btn--md btn--mark" type="submit" value="Искать" />
+                        </form>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-list">
+                        <a class="nav-el" href="#">Каталог</a>
+                        <a class="nav-el" href="#">Сервис</a>
+                        <a class="nav-el" href="#">О компании</a>
+                        <a class="nav-el" href="#">Контакты</a>
+                    </div>
+                    <form class="search" action="#">
+                        <input class="input" type="text" placeholder="Что ищем" />
+                        <input class="btn--md btn--mark" type="submit" value="Искать" />
+                    </form>
+                </div>
             </div>
-            <div class="footer-nav">
-                <div class="footer-nav__col">
-                    <div class="footer-nav__title">Каталог</div>
-                    <div class="footer-nav__el">Фасады</div>
-                    <div class="footer-nav__el">Ручки</div>
-                    <div class="footer-nav__el">Вытяжки</div>
-                    <div class="footer-nav__el">Сопутствующие товары</div>
+        </div>
+        <!--block header end-->
+        <div class="content">
+            <div class="main-cont">
+                <p>Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"</p>
+                <p>Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send</p>
+                <div class="btn-wrap">
+                    <div class="btn--md btn--mark modal-get" data-modal="enter">Вход | data-modal="enter"</div>
                 </div>
-                <div class="footer-nav__col">
-                    <div class="footer-nav__title">Сервис</div>
-                    <div class="footer-nav__el">Материалы</div>
-                    <div class="footer-nav__el">Производство</div>
+            </div>
+        </div>
+        <!--block footer-->
+        <div class="soc-row">
+            <a class="soc-row__el" href="#">
+                <img src="img/facebook--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/vk--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/instagram--color.svg" alt="" />
+            </a>
+        </div>
+        <div class="footer">
+            <div class="main-cont">
+                <div class="footer-head">
+                    <a class="footer-logo" href="/">
+                        <img src="img/logo-light.svg" alt="" />
+                    </a>
+                    <a class="footer-phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
                 </div>
-                <div class="footer-nav__col">
-                    <div class="footer-nav__title">О компании</div>
-                    <div class="footer-nav__el">Дизайнеры</div>
-                    <div class="footer-nav__el">Новости</div>
-                </div>
-                <div class="footer-nav__col">
-                    <div class="footer-nav__title">Контакты</div>
-                    <div class="footer-contact">
-                        <div class="footer-contact-name">Адрес:</div>
-                        <div class="footer-contact-val">МО, г. Щёлково, ул. Хотовская, д. 34, корп. 2</div>
+                <div class="footer-nav">
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Каталог</div>
+                        <div class="footer-nav__el">Фасады</div>
+                        <div class="footer-nav__el">Ручки</div>
+                        <div class="footer-nav__el">Вытяжки</div>
+                        <div class="footer-nav__el">Сопутствующие товары</div>
                     </div>
-                    <div class="footer-contact">
-                        <div class="footer-contact-name">Тел.:</div>
-                        <div class="footer-contact-val">+7 (495) 651-86-75</div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Сервис</div>
+                        <div class="footer-nav__el">Материалы</div>
+                        <div class="footer-nav__el">Производство</div>
                     </div>
-                    <div class="footer-contact">
-                        <div class="footer-contact-name">E-mail:</div>
-                        <div class="footer-contact-val">info@veneto.pro</div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">О компании</div>
+                        <div class="footer-nav__el">Дизайнеры</div>
+                        <div class="footer-nav__el">Новости</div>
                     </div>
-                    <a class="footer-loc" href="/">Как добраться</a>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Контакты</div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Адрес:</div>
+                            <div class="footer-contact-val">МО, г. Щёлково, ул. Хотовская, д. 34, корп. 2</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Тел.:</div>
+                            <div class="footer-contact-val">+7 (495) 651-86-75</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">E-mail:</div>
+                            <div class="footer-contact-val">info@veneto.pro</div>
+                        </div>
+                        <a class="footer-loc" href="/">Как добраться</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,58 +174,102 @@
     <div class="modal-layer">
         <div class="modal-filter"></div>
         <div class="modal-wrap">
-            <div class="modal" data-modal="order">
+            <div class="modal" data-modal="enter">
                 <div class="modal-content">
                     <div class="modal-close">
                         <svg class="icon">
-                            <use xlink:href="#close"></use>
+                            <use xlink:href="#close-fat"></use>
                         </svg>
                     </div>
-                    <div class="modal-title">Оставьте заявку</div>
-                    <div class="modal-text">Обращаетесь к нам впервые?
-                        <br>Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
-                    <form class="validate-form" action="javascript:void(null);">
-                        <div class="input-row">
-                            <input class="input" type="text" name="name" placeholder="Ваше имя" />
-                        </div>
-                        <div class="input-row">
-                            <input class="input" type="text" name="phone" placeholder="Ваш телефон" />
-                        </div>
-                        <div class="input-row">
-                            <textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
-                        </div>
-                        <div class="agree-row">
-                            <div class="check-el">
-                                <label class="style-label style-label--checkbox">
-                                    <input class="sytle-input" type="checkbox" name="agree" />
-                                    <div class="sytle-input-element">
-                                        <svg class="icon-check">
-                                            <use xlink:href="#checked"></use>
-                                        </svg>
+                    <div class="modal-head">
+                        <div class="modal-head__el modal-head__el--active">Личный кабинет</div>
+                        <div class="modal-head__el">Регистрация</div>
+                    </div>
+                    <div class="modal-info-wrap">
+                        <div class="modal-info">
+                            <form class="validate-form" action="javascript:void(null);">
+                                <div class="input-cont">
+                                    <!-- toggle class .input-row--error-->
+                                    <div class="input-row">
+                                        <div class="input-row__title">Почта</div>
+                                        <input class="input" type="text" placeholder="Ваша почта" />
+                                        <!--.error-msg Введённые данные не должны содержать цифры-->
                                     </div>
-                                    <div class="sytle-input-text"></div>
-                                </label>
-                            </div>
-                            <div class="agree-row__text">Согласен с
-                                <a href="#">условиями обработки персональных данных</a>
-                            </div>
+                                </div>
+                                <div class="input-cont">
+                                    <div class="input-row">
+                                        <div class="input-row__title">Пароль</div>
+                                        <input class="input" type="password" placeholder="Ваш пароль" />
+                                    </div>
+                                </div>
+                                <input class="modal-send" type="submit" value="Войти" />
+                            </form>
                         </div>
-                        <input class="modal-send" type="submit" value="Отправить заявку" />
-                    </form>
-                </div>
-            </div>
-            <!--success message-->
-            <div class="modal" data-modal="truemessage">
-                <div class="modal-content modal-content--true">
-                    <svg class="icon">
-                        <use xlink:href="#interface"></use>
-                    </svg>
-                    <div class="modal-text-true">Ваша заявка принята</div>
+                        <div class="modal-info hidden">
+                            <form action="javascript:void(null);">
+                                <div class="input-row__title">Организация</div>
+                                <div class="input-cont">
+                                    <div class="input-row input-row--error">
+                                        <input class="input" type="text" placeholder="Название вашей организации" />
+                                        <div class="error-msg">Введённые данные не должны содержать цифры</div>
+                                    </div>
+                                </div>
+                                <div class="input-row__title">Контактное лицо</div>
+                                <div class="input-cont input-cont--two">
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="ФИО" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Ваш телефон" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Ваша почта" />
+                                    </div>
+                                </div>
+                                <div class="input-row__title">Адрес</div>
+                                <div class="input-cont input-cont--two">
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Город" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Улица" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Дом" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="Квартира, офис" />
+                                    </div>
+                                </div>
+                                <div class="input-row__title">банковские реквизиты</div>
+                                <div class="input-cont input-cont--two">
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="ИНН" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="ОГРН" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="text" placeholder="КПП" />
+                                    </div>
+                                </div>
+                                <div class="input-row__title">Пароль</div>
+                                <div class="input-cont input-cont--two">
+                                    <div class="input-row">
+                                        <input class="input" type="password" placeholder="Ваш пароль" />
+                                    </div>
+                                    <div class="input-row">
+                                        <input class="input" type="password" placeholder="Повторите пароль" />
+                                    </div>
+                                </div>
+                                <input class="modal-send" type="submit" value="Зарегистрироваться" />
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <a class="modal-get" href="#" data-modal="order">Открыть модальное окно</a>
     <!--build:js js/combined.js-->
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="bower/slick-carousel/slick/slick.js"></script>

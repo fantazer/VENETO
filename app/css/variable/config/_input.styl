@@ -1,6 +1,6 @@
 // === Inputs ===
 .input,.textarea,.select
-	padding 18px 15px
+	padding 15px
 	border 1px solid $border-color
 	resize: none
 	outline: 0 !important
@@ -92,9 +92,10 @@
 
 //form
 .input-row
-	margin-bottom: 20px
+	//margin-bottom: 20px
 	.input
 		width: 100%
+		margin-bottom: 0
 .input-row__title
 	margin-bottom: 10px
 
@@ -112,6 +113,7 @@
 .input-cont
 	display: grid
 	grid-gap 20px
+	margin-bottom: 20px
 .input-cont--two
 	grid-template-columns: 1fr 1fr
 	+below(640px)
@@ -120,6 +122,3 @@
 	grid-template-columns: 1fr 1fr 1fr
 	+below(640px)
 		grid-template-columns: 1fr
-
-.lk-settings
-	max-width 640px

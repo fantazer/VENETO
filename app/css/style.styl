@@ -62,29 +62,30 @@ body
 
 .modal
 	+below(768px)
-		width: 100%
+		width: 95%
 		box-shadow 0 0 0
+		margin-left: 10px
+		margin-right: 10px
 	box-shadow 0 2px 4px rgba(0, 0, 0, 0.24)
 	transform translateY(-350%)
 	position: absolute
 	opacity .1
 	transition transform .8s, opacity 1s
-	max-width 470px
+	width 480px
 	.order__row
 		margin-bottom: 20px
 		border-bottom 0
 .modal-content
 	+below(640px)
 		height: 100%
-		padding: 20px 10px
+		padding: 20px
 		overflow-y scroll
 		width: 100%!important
 		br(0)
 	background: white
 	position: relative
 	padding: 40px
-	br(10px)
-
+	margin: 20px 0
 .modal__show
 	max-height 100%
 	opacity 1
@@ -143,6 +144,9 @@ body
 		width: 100%
 		margin-bottom: 20px
 .modal-send
+	+below(480px)
+		padding: 10px 15px
+		font-size: 12px
 	@extend .btn--md
 	@extend .btn--mark
 	width: 100%
@@ -367,9 +371,11 @@ select.select-beauty
 	f()
 	margin-left auto
 	width: 30%
+	justify-content flex-end
+
 	.input
 		padding: 10px
-		width: 100%
+		width: 65%
 	.btn--md
 		border-radius 0
 		padding: 15px
@@ -1841,6 +1847,12 @@ table th, table td
 	@extend .type--md
 	font-weight: 700
 
+
+.lk-settings
+	+below(768px)
+		width: 100%
+	max-width 640px
+
 //.history
 .history__el
 	margin-bottom: 20px
@@ -1999,3 +2011,39 @@ table th, table td
 	font-weight: 700
 .history-descr__val
 	line-height: 1.6
+
+.modal-head
+	f()
+.modal-head__el
+	+below(480px)
+		font-size: 9px
+		padding: 10px
+		margin-bottom: 20px
+	border-bottom 1px solid $border-color
+	width: 50%
+	text-align center
+	padding: 15px
+	margin-bottom: 30px
+	up()
+	cp()
+.modal-head__el--active
+	font-weight 700
+	color $mark
+	border-bottom 3px solid $mark
+
+.exepsion
+	flex(mid)
+	fl()
+	color $mark
+.exepsion-head
+	@extend .type--lgx
+	up()
+.exepsion-code
+	+below(480px)
+		font-size: 120px
+	font-size: 180px
+	font-weight: 700
+.exepsion-text
+	margin-bottom: 20px
+.exepsion-back
+	text-decoration: underline

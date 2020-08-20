@@ -1,0 +1,176 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.page
+	+header()
+	.content
+		.main-cont
+			+bread()
+			.layer
+				.toolbar
+					.profile
+						.profile-wrap
+							.profile__name ООО "Вектор"
+							.profile-row
+								.profile-row__name ИНН
+								.profile-row__val 12392293
+							.profile-row
+								.profile-row__name ОГРН
+								.profile-row__val 2134 32023 03230 3233
+							.profile-row
+								.profile-row__name КПП
+								.profile-row__val 032303233
+							.profile-row
+								.profile-row__name Юр.Адрес
+								.profile-row__val ул Ленина д82
+							.profile-row
+								.profile-row__name Сотрудники компании
+								.profile-row__val Ольга Иванова
+								.profile-row__val Виктор Смирнов
+								.profile-row__val Антон Повоп
+							a(href="#").profile-change
+								+icon("edit","icon")
+								span изменить информацию
+					.toolbar-item
+						.toolbar-head Ваш менеджер
+						.toolbar-manager
+							.toolbar-manager__el
+								.toolbar-manager__name <b>Иванов Иван Иванович</b>
+							.toolbar-manager__el <b>Тел:</b> 8 800 000 00 00
+							.toolbar-manager__el <b>Почта:</b> ivanov@gmail.com
+				.info
+					.lk-info__el
+						.title.title--lg История заказов
+						.search-lk
+							input(type="text" placeholder="Поиск по заказам" class="input")
+							+icon("search","icon")
+						.history
+							- for (var j=0;j<5;j++)
+								.history-card(class=j === 0 ? 'history-card--active' : '')
+									.history-card__wrap
+										.history-card__info
+											.history-card__numb № 43576
+											.history-card__date 28 Сентября, 2017
+										if(j !== 1 && j !== 2)
+											.history-card__state.history-card__state--true Оплачен
+										else
+											.history-card__state В обработке
+										// add class .history-card__state--true for delivered
+										.history-card__condition
+											.history-card__size 3 товара
+											.history-card__price_val 5430 р
+									.history-info(class=j === 0 ? 'show' : '')
+										.history-info-wrap
+											.history-info__el
+												.history-info__el-title Состав заказа
+												.goods-list
+													- for (var i=0;i<4;i++)
+														.goods-list__el
+															.goods-list__el-name San Benedetto Aquavitamin an Benedetto
+															.goods-list__el-val x 2
+															.goods-list__el-cost 1003 р.
+												.history-info__el-title Менеджер заказа
+												.history-manager
+													.history-manager__el Менеджер: <b>Иванов Иван</b>
+													.history-manager__el Телефон: <b>+7 (383) 876 90 00</b>
+													.history-manager__el Email: <b>example@gmail.com</b>
+
+							.order-empty.hidden
+								.order-empty-title Ваша история пуста =(
+								.order-empty-text Сделайте заказ
+								.btn--md.btn--mark Посмотреть каталог
+							.btn-row-mid
+								.btn--md.btn--light.btn--mobile Новый заказ
+					.lk-info__el
+						.title.title--md Мои персональные скидки
+						.lk-sale-wrap
+							.lk-sale__el
+								.lk-sale__val -5%
+								.lk-sale__name На столешницы из искусственного камня
+							.lk-sale__el
+								.lk-sale__val -25%
+								.lk-sale__name На петли фирмы Bulma
+							.lk-sale__el
+								.lk-sale__val -40%
+								.lk-sale__name На фасады ручной работы из Италии
+					.lk-info__el
+						.title.title--md Прайсы и документация
+						.instr
+							- for (var i=0;i<3;i++)
+								a(href="#").instr__el
+									.instr-icon
+										+icon("pdf","icon")
+									.instr-name Инстукция по уходу
+								a(href="#").instr__el
+									.instr-icon
+										+icon("table-file","icon")
+									.instr-name Схема сборки
+					.lk-info__el
+						.title.title--md Рекламации
+						.about-el--info.text
+							p Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что реализация намеченных плановых заданий способствует подготовки и реализации дальнейших направлений развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение дальнейших направлений развития.
+
+							p Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
+
+							p Товарищи! постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что консультация с широким активом способствует подготовки и реализации новых предложений. Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке модели развития. Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+						.instr
+							- for (var i=0;i<3;i++)
+								a(href="#").instr__el
+									.instr-icon
+										+icon("pdf","icon")
+									.instr-name Руководство для возврата поврежденных товаров
+								a(href="#").instr__el
+									.instr-icon
+										+icon("pdf","icon")
+									.instr-name Контактные данные для обращений клиентов
+					.lk-info__el
+						.title.title--md Загрузка файлов
+						.about-el--info
+							// doc https://www.dropzonejs.com/
+							form.dropzone(action='/file-upload')
+								.dz-message
+									+icon("download","icon")
+									.dz-message-title Отправить файлы
+									.dz-message-text Приложите файлы <br> jpg,png,pdf маx размер 10мб
+								.fallback
+									input(name='file' type='file' multiple='')
+						p Претензии будут приниматься через электронную почту менеджеров.
+					.lk-info__el
+						.title.title--md Фотобанк
+						.filter-wrap
+							.filter__el
+								.filter__el-name Вид изделия
+								.filter__el-val
+									select.select-beauty
+										option(value="1") Вариант 1
+										option(value="2") Вариант 2
+										option(value="3") Вариант 3
+										option(value="4") Вариант 4
+							.filter__el
+								.filter__el-name Материал
+								.filter__el-val
+									select.select-beauty
+										option(value="1") Вариант 1
+										option(value="2") Вариант 2
+										option(value="3") Вариант 3
+										option(value="4") Вариант 4
+
+
+						.catalog.catalog--photo
+								a(href="img/item-4.jpg" data-fancybox="images").catalog__el.fancybox
+									.catalog__el-img-wrap
+										.catalog__el-img(style="background-image:url('img/item-4.jpg')")
+								a(href="img/item-5.jpg" data-fancybox="images").catalog__el.fancybox
+									.catalog__el-img-wrap
+										.catalog__el-img(style="background-image:url('img/item-5.jpg')")
+								a(href="img/item-6.jpg" data-fancybox="images").catalog__el.fancybox
+									.catalog__el-img-wrap
+										.catalog__el-img(style="background-image:url('img/item-6.jpg')")
+
+						.pag
+							.pag__el.pag__el--active 1
+							.pag__el 2
+							.pag__el 3
+	+footer()
+include ./block_html/_script.pug

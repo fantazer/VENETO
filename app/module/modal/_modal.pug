@@ -63,6 +63,34 @@ mixin modal()
 									.input-row
 										input(type="password" placeholder="Повторите пароль" class="input")
 								input(type="submit" value="Зарегистрироваться").modal-send
+		.modal-wrap
+			.modal.modal--lg(data-modal="profile")
+				.modal-content
+					.modal-close
+						+icon("close-fat","icon")
+					.modal-title Редактирование профиля
+					.input-cont.input-cont--two
+						-
+							var items = [
+								'Название ЮЛ',
+								'ИНН',
+								'КПП',
+								'Юр.адрес',
+								'ОГРН',
+								'ОКПО',
+								'ОКАТО',
+								'Р/С',
+								'Наименование банка',
+								'БИК',
+								'К/СЧ',
+								'Директор',
+								];
+						each item in items
 
+								.input-row
+									.input-row__title #{item}
+									input(type="text"  class="input" value='Значение свойства '+ item)
+					.btn-row-mid.btn-row-mid--clear
+						input(type="submit" value="Отправить").btn--md.btn--mark
 
 

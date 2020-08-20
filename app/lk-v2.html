@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<!--create by ANATOLY KUZNETSOV-->
+<!--contact mail:kuznecovs45@gmail.com skype:an_kuznetcov-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--colors-tabs-->
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <!--SEO-->
+    <title>Document</title>
+    <meta name="description" itemprop="description" content="" />
+    <!--build:css css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="bower/dropzone/dist/dropzone.css" />
+    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-edit.css" />
+</head>
+
+<body>
+    <!--block footer end-->
+    <div class="page">
+        <!--block header-->
+        <div class="header">
+            <div class="main-cont">
+                <div class="head">
+                    <div class="head-toggle">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <a class="logo" href="/">
+                        <img src="img/logo.svg" alt="" />
+                    </a>
+                    <a class="head__phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                    <div class="head-tool">
+                        <a class="head-login" href="#">Личный кабинет</a>
+                        <a class="cart" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#shopping-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slide-menu">
+                        <div class="slide-menu__list">
+                            <a class="slide-menu__list-el" href="#">Каталог</a>
+                            <a class="slide-menu__list-el" href="#">Сервис</a>
+                            <a class="slide-menu__list-el" href="#">О компании</a>
+                            <a class="slide-menu__list-el" href="#">Контакты</a>
+                            <a class="slide-menu__list-el" href="#">Личный кабинет</a>
+                        </div>
+                        <a class="header-top-phone" href="tel:8 800 000 00 00">
+                            <div class="header-top-phone__icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-call"></use>
+                                </svg>
+                            </div>
+                            <div class="header-top-phone__val">8 800 000 00 00</div>
+                        </a>
+                        <form class="search" action="#">
+                            <input class="input" type="text" placeholder="Что ищем" />
+                            <input class="btn--md btn--mark" type="submit" value="Искать" />
+                        </form>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-list">
+                        <a class="nav-el" href="#">Каталог</a>
+                        <a class="nav-el" href="#">Сервис</a>
+                        <a class="nav-el" href="#">О компании</a>
+                        <a class="nav-el" href="#">Контакты</a>
+                    </div>
+                    <form class="search" action="#">
+                        <input class="input" type="text" placeholder="Что ищем" />
+                        <input class="btn--md btn--mark" type="submit" value="Искать" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--block header end-->
+        <div class="content">
+            <div class="main-cont">
+                <div class="bread-row">
+                    <div class="bread">
+                        <a class="bread__el" href="#">Главная</a>
+                        <div class="bread__el">Страница</div>
+                    </div>
+                </div>
+                <div class="layer">
+                    <div class="toolbar">
+                        <div class="profile">
+                            <div class="profile-wrap">
+                                <div class="profile__name">ООО "Вектор"</div>
+                                <div class="profile-row">
+                                    <div class="profile-row__name">ИНН</div>
+                                    <div class="profile-row__val">12392293</div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-row__name">ОГРН</div>
+                                    <div class="profile-row__val">2134 32023 03230 3233</div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-row__name">КПП</div>
+                                    <div class="profile-row__val">032303233</div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-row__name">Юр.Адрес</div>
+                                    <div class="profile-row__val">ул Ленина д82</div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-row__name">Сотрудники компании</div>
+                                    <div class="profile-row__val">Ольга Иванова</div>
+                                    <div class="profile-row__val">Виктор Смирнов</div>
+                                    <div class="profile-row__val">Антон Повоп</div>
+                                </div>
+                                <a class="profile-change" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#edit"></use>
+                                    </svg>
+                                    <span>изменить информацию</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="toolbar-item">
+                            <div class="toolbar-head">Ваш менеджер</div>
+                            <div class="toolbar-manager">
+                                <div class="toolbar-manager__el">
+                                    <div class="toolbar-manager__name">
+                                        <b>Иванов Иван Иванович</b>
+                                    </div>
+                                </div>
+                                <div class="toolbar-manager__el">
+                                    <b>Тел:</b>8 800 000 00 00</div>
+                                <div class="toolbar-manager__el">
+                                    <b>Почта:</b>ivanov@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="lk-info__el">
+                            <div class="title title--lg">История заказов</div>
+                            <div class="search-lk">
+                                <input class="input" type="text" placeholder="Поиск по заказам" />
+                                <svg class="icon">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </div>
+                            <div class="history">
+                                <div class="history-card history-card--active">
+                                    <div class="history-card__wrap">
+                                        <div class="history-card__info">
+                                            <div class="history-card__numb">№ 43576</div>
+                                            <div class="history-card__date">28 Сентября, 2017</div>
+                                        </div>
+                                        <div class="history-card__state history-card__state--true">Оплачен</div>
+                                        <!-- add class .history-card__state--true for delivered-->
+                                        <div class="history-card__condition">
+                                            <div class="history-card__size">3 товара</div>
+                                            <div class="history-card__price_val">5430 р</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-info show">
+                                        <div class="history-info-wrap">
+                                            <div class="history-info__el">
+                                                <div class="history-info__el-title">Состав заказа</div>
+                                                <div class="goods-list">
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="history-info__el-title">Менеджер заказа</div>
+                                                <div class="history-manager">
+                                                    <div class="history-manager__el">Менеджер:
+                                                        <b>Иванов Иван</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Телефон:
+                                                        <b>+7 (383) 876 90 00</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Email:
+                                                        <b>example@gmail.com</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-card">
+                                    <div class="history-card__wrap">
+                                        <div class="history-card__info">
+                                            <div class="history-card__numb">№ 43576</div>
+                                            <div class="history-card__date">28 Сентября, 2017</div>
+                                        </div>
+                                        <div class="history-card__state">В обработке</div>
+                                        <!-- add class .history-card__state--true for delivered-->
+                                        <div class="history-card__condition">
+                                            <div class="history-card__size">3 товара</div>
+                                            <div class="history-card__price_val">5430 р</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-info">
+                                        <div class="history-info-wrap">
+                                            <div class="history-info__el">
+                                                <div class="history-info__el-title">Состав заказа</div>
+                                                <div class="goods-list">
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="history-info__el-title">Менеджер заказа</div>
+                                                <div class="history-manager">
+                                                    <div class="history-manager__el">Менеджер:
+                                                        <b>Иванов Иван</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Телефон:
+                                                        <b>+7 (383) 876 90 00</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Email:
+                                                        <b>example@gmail.com</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-card">
+                                    <div class="history-card__wrap">
+                                        <div class="history-card__info">
+                                            <div class="history-card__numb">№ 43576</div>
+                                            <div class="history-card__date">28 Сентября, 2017</div>
+                                        </div>
+                                        <div class="history-card__state">В обработке</div>
+                                        <!-- add class .history-card__state--true for delivered-->
+                                        <div class="history-card__condition">
+                                            <div class="history-card__size">3 товара</div>
+                                            <div class="history-card__price_val">5430 р</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-info">
+                                        <div class="history-info-wrap">
+                                            <div class="history-info__el">
+                                                <div class="history-info__el-title">Состав заказа</div>
+                                                <div class="goods-list">
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="history-info__el-title">Менеджер заказа</div>
+                                                <div class="history-manager">
+                                                    <div class="history-manager__el">Менеджер:
+                                                        <b>Иванов Иван</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Телефон:
+                                                        <b>+7 (383) 876 90 00</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Email:
+                                                        <b>example@gmail.com</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-card">
+                                    <div class="history-card__wrap">
+                                        <div class="history-card__info">
+                                            <div class="history-card__numb">№ 43576</div>
+                                            <div class="history-card__date">28 Сентября, 2017</div>
+                                        </div>
+                                        <div class="history-card__state history-card__state--true">Оплачен</div>
+                                        <!-- add class .history-card__state--true for delivered-->
+                                        <div class="history-card__condition">
+                                            <div class="history-card__size">3 товара</div>
+                                            <div class="history-card__price_val">5430 р</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-info">
+                                        <div class="history-info-wrap">
+                                            <div class="history-info__el">
+                                                <div class="history-info__el-title">Состав заказа</div>
+                                                <div class="goods-list">
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="history-info__el-title">Менеджер заказа</div>
+                                                <div class="history-manager">
+                                                    <div class="history-manager__el">Менеджер:
+                                                        <b>Иванов Иван</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Телефон:
+                                                        <b>+7 (383) 876 90 00</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Email:
+                                                        <b>example@gmail.com</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-card">
+                                    <div class="history-card__wrap">
+                                        <div class="history-card__info">
+                                            <div class="history-card__numb">№ 43576</div>
+                                            <div class="history-card__date">28 Сентября, 2017</div>
+                                        </div>
+                                        <div class="history-card__state history-card__state--true">Оплачен</div>
+                                        <!-- add class .history-card__state--true for delivered-->
+                                        <div class="history-card__condition">
+                                            <div class="history-card__size">3 товара</div>
+                                            <div class="history-card__price_val">5430 р</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-info">
+                                        <div class="history-info-wrap">
+                                            <div class="history-info__el">
+                                                <div class="history-info__el-title">Состав заказа</div>
+                                                <div class="goods-list">
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                    <div class="goods-list__el">
+                                                        <div class="goods-list__el-name">San Benedetto Aquavitamin an Benedetto</div>
+                                                        <div class="goods-list__el-val">x 2</div>
+                                                        <div class="goods-list__el-cost">1003 р.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="history-info__el-title">Менеджер заказа</div>
+                                                <div class="history-manager">
+                                                    <div class="history-manager__el">Менеджер:
+                                                        <b>Иванов Иван</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Телефон:
+                                                        <b>+7 (383) 876 90 00</b>
+                                                    </div>
+                                                    <div class="history-manager__el">Email:
+                                                        <b>example@gmail.com</b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-empty hidden">
+                                    <div class="order-empty-title">Ваша история пуста =(</div>
+                                    <div class="order-empty-text">Сделайте заказ</div>
+                                    <div class="btn--md btn--mark">Посмотреть каталог</div>
+                                </div>
+                                <div class="btn-row-mid">
+                                    <div class="btn--md btn--light btn--mobile">Новый заказ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-info__el">
+                            <div class="title title--md">Мои персональные скидки</div>
+                            <div class="lk-sale-wrap">
+                                <div class="lk-sale__el">
+                                    <div class="lk-sale__val">-5%</div>
+                                    <div class="lk-sale__name">На столешницы из искусственного камня</div>
+                                </div>
+                                <div class="lk-sale__el">
+                                    <div class="lk-sale__val">-25%</div>
+                                    <div class="lk-sale__name">На петли фирмы Bulma</div>
+                                </div>
+                                <div class="lk-sale__el">
+                                    <div class="lk-sale__val">-40%</div>
+                                    <div class="lk-sale__name">На фасады ручной работы из Италии</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-info__el">
+                            <div class="title title--md">Прайсы и документация</div>
+                            <div class="instr">
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Инстукция по уходу</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#table-file"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Схема сборки</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Инстукция по уходу</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#table-file"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Схема сборки</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Инстукция по уходу</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#table-file"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Схема сборки</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lk-info__el">
+                            <div class="title title--md">Рекламации</div>
+                            <div class="about-el--info text">
+                                <p>Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития. Разнообразный и богатый опыт начало повседневной
+                                    работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что реализация намеченных плановых заданий способствует
+                                    подготовки и реализации дальнейших направлений развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение дальнейших направлений развития.</p>
+                                <p>Таким образом реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также новая модель организационной
+                                    деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+                                <p>Товарищи! постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна,
+                                    что консультация с широким активом способствует подготовки и реализации новых предложений. Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке
+                                    модели развития. Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.</p>
+                            </div>
+                            <div class="instr">
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Руководство для возврата поврежденных товаров</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Контактные данные для обращений клиентов</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Руководство для возврата поврежденных товаров</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Контактные данные для обращений клиентов</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Руководство для возврата поврежденных товаров</div>
+                                </a>
+                                <a class="instr__el" href="#">
+                                    <div class="instr-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="instr-name">Контактные данные для обращений клиентов</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lk-info__el">
+                            <div class="title title--md">Загрузка файлов</div>
+                            <div class="about-el--info">
+                                <!-- doc https://www.dropzonejs.com/-->
+                                <form class="dropzone" action="/file-upload">
+                                    <div class="dz-message">
+                                        <svg class="icon">
+                                            <use xlink:href="#download"></use>
+                                        </svg>
+                                        <div class="dz-message-title">Отправить файлы</div>
+                                        <div class="dz-message-text">Приложите файлы
+                                            <br>jpg,png,pdf маx размер 10мб</div>
+                                    </div>
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple="" />
+                                    </div>
+                                </form>
+                            </div>
+                            <p>Претензии будут приниматься через электронную почту менеджеров.</p>
+                        </div>
+                        <div class="lk-info__el">
+                            <div class="title title--md">Фотобанк</div>
+                            <div class="filter-wrap">
+                                <div class="filter__el">
+                                    <div class="filter__el-name">Вид изделия</div>
+                                    <div class="filter__el-val">
+                                        <select class="select-beauty">
+                                            <option value="1">Вариант 1</option>
+                                            <option value="2">Вариант 2</option>
+                                            <option value="3">Вариант 3</option>
+                                            <option value="4">Вариант 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter__el">
+                                    <div class="filter__el-name">Материал</div>
+                                    <div class="filter__el-val">
+                                        <select class="select-beauty">
+                                            <option value="1">Вариант 1</option>
+                                            <option value="2">Вариант 2</option>
+                                            <option value="3">Вариант 3</option>
+                                            <option value="4">Вариант 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog catalog--photo">
+                                <a class="catalog__el fancybox" href="img/item-4.jpg" data-fancybox="images">
+                                    <div class="catalog__el-img-wrap">
+                                        <div class="catalog__el-img" style="background-image:url('img/item-4.jpg')"></div>
+                                    </div>
+                                </a>
+                                <a class="catalog__el fancybox" href="img/item-5.jpg" data-fancybox="images">
+                                    <div class="catalog__el-img-wrap">
+                                        <div class="catalog__el-img" style="background-image:url('img/item-5.jpg')"></div>
+                                    </div>
+                                </a>
+                                <a class="catalog__el fancybox" href="img/item-6.jpg" data-fancybox="images">
+                                    <div class="catalog__el-img-wrap">
+                                        <div class="catalog__el-img" style="background-image:url('img/item-6.jpg')"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pag">
+                                <div class="pag__el pag__el--active">1</div>
+                                <div class="pag__el">2</div>
+                                <div class="pag__el">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block footer-->
+        <div class="soc-row">
+            <a class="soc-row__el" href="#">
+                <img src="img/facebook--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/vk--color.svg" alt="" />
+            </a>
+            <a class="soc-row__el" href="#">
+                <img src="img/instagram--color.svg" alt="" />
+            </a>
+        </div>
+        <div class="footer">
+            <div class="main-cont">
+                <div class="footer-head">
+                    <a class="footer-logo" href="/">
+                        <img src="img/logo-light.svg" alt="" />
+                    </a>
+                    <a class="footer-phone" href="tel:+7 (495) 651-86-75">+7 (495) 651-86-75</a>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Каталог</div>
+                        <div class="footer-nav__el">Фасады</div>
+                        <div class="footer-nav__el">Ручки</div>
+                        <div class="footer-nav__el">Вытяжки</div>
+                        <div class="footer-nav__el">Сопутствующие товары</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Сервис</div>
+                        <div class="footer-nav__el">Материалы</div>
+                        <div class="footer-nav__el">Производство</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">О компании</div>
+                        <div class="footer-nav__el">Дизайнеры</div>
+                        <div class="footer-nav__el">Новости</div>
+                    </div>
+                    <div class="footer-nav__col">
+                        <div class="footer-nav__title">Контакты</div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Адрес:</div>
+                            <div class="footer-contact-val">МО, г. Щёлково, ул. Хотовская, д. 34, корп. 2</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">Тел.:</div>
+                            <div class="footer-contact-val">+7 (495) 651-86-75</div>
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact-name">E-mail:</div>
+                            <div class="footer-contact-val">info@veneto.pro</div>
+                        </div>
+                        <a class="footer-loc" href="/">Как добраться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--build:js js/combined.js-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/slick-carousel/slick/slick.js"></script>
+    <script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+    <script src="bower/sticky-kit/jquery.sticky-kit.js"></script>
+    <script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="bower/dropzone/dist/dropzone.js"></script>
+    <!-- endbuild-->
+    <script src="js/add-on.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-edit.js"></script>
+</body>
+
+</html>

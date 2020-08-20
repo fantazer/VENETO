@@ -24,7 +24,6 @@
     <style type="text/css">
         .btn--md {
         		display: inline-block;
-        		margin-bottom: 20px;
         	}
         	
         	.btn-wrap {
@@ -102,6 +101,8 @@
                 <p>Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send</p>
                 <div class="btn-wrap">
                     <div class="btn--md btn--mark modal-get" data-modal="enter">Вход | data-modal="enter"</div>
+                    <br/>
+                    <div class="btn--md btn--mark modal-get" data-modal="profile">Изменить профиль | data-modal="profile"</div>
                 </div>
             </div>
         </div>
@@ -257,6 +258,71 @@
                                 <input class="modal-send" type="submit" value="Зарегистрироваться" />
                             </form>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-wrap">
+            <div class="modal modal--lg" data-modal="profile">
+                <div class="modal-content">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close-fat"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-title">Редактирование профиля</div>
+                    <div class="input-cont input-cont--two">
+                        <div class="input-row">
+                            <div class="input-row__title">Название ЮЛ</div>
+                            <input class="input" type="text" value="Значение свойства Название ЮЛ" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">ИНН</div>
+                            <input class="input" type="text" value="Значение свойства ИНН" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">КПП</div>
+                            <input class="input" type="text" value="Значение свойства КПП" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">Юр.адрес</div>
+                            <input class="input" type="text" value="Значение свойства Юр.адрес" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">ОГРН</div>
+                            <input class="input" type="text" value="Значение свойства ОГРН" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">ОКПО</div>
+                            <input class="input" type="text" value="Значение свойства ОКПО" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">ОКАТО</div>
+                            <input class="input" type="text" value="Значение свойства ОКАТО" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">Р/С</div>
+                            <input class="input" type="text" value="Значение свойства Р/С" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">Наименование банка</div>
+                            <input class="input" type="text" value="Значение свойства Наименование банка" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">БИК</div>
+                            <input class="input" type="text" value="Значение свойства БИК" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">К/СЧ</div>
+                            <input class="input" type="text" value="Значение свойства К/СЧ" />
+                        </div>
+                        <div class="input-row">
+                            <div class="input-row__title">Директор</div>
+                            <input class="input" type="text" value="Значение свойства Директор" />
+                        </div>
+                    </div>
+                    <div class="btn-row-mid btn-row-mid--clear">
+                        <input class="btn--md btn--mark" type="submit" value="Отправить" />
                     </div>
                 </div>
             </div>

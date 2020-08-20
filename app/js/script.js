@@ -342,4 +342,18 @@ $(document).ready(function () {
 		})
 	});
 	// toggle lk-history === end
+
+	//history accord
+	$('.history-card__wrap').click(function () {
+		var current = $(this).closest('.history-card');
+		if(current.hasClass("history-card--active")){
+			current.removeClass("history-card--active")
+			current.find('.history-info').removeClass("show");
+			current.find('.history-info').slideUp();
+		}else{
+			current.addClass("history-card--active")
+			current.find('.history-info').slideDown();
+		}
+	});
+	//history accord===end
 });

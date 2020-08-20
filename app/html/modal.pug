@@ -4,7 +4,6 @@ include block_html/_include.pug
 style(type='text/css').
 	.btn--md {
 		display: inline-block;
-		margin-bottom: 20px;
 	}
 
 	.btn-wrap {
@@ -23,6 +22,8 @@ style(type='text/css').
 			p Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send
 			.btn-wrap
 				.btn--md.btn--mark.modal-get(data-modal="enter") Вход | data-modal="enter"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="profile") Изменить профиль | data-modal="profile"
 
 	+footer()
 +modal()

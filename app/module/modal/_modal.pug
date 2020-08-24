@@ -90,6 +90,9 @@ mixin modal()
 								.input-row
 									.input-row__title #{item}
 									input(type="text"  class="input" value='Значение свойства '+ item)
+					.input-cont
+						+checkbox('Согласен получать рассылку о новостях компании')
+
 					.btn-row-mid.btn-row-mid--clear
 						input(type="submit" value="Отправить").btn--md.btn--mark
 

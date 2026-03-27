@@ -10,7 +10,7 @@
     "create-file": "^1.0.1",
     "emitty": "^1.4.0",
     "favicons": "^4.8.6",
-    "gemini": "0.8.2",
+    "gemini": "7.5.2",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-cached": "^1.1.0",
